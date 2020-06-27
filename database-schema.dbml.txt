@@ -1,0 +1,63 @@
+Project Menus {
+  database_type: 'PostgreSQL'
+  note: '''
+  # Database for The New York Public Library’s restaurant menu collection 
+  '''
+}
+
+Table Menu as M {
+  id integer [primary key, unique]
+  name varchar
+  sponsor varchar
+  event varchar
+  venue varchar
+  place varchar
+  physical_description varchar
+  occasion varchar
+  notes varchar
+  call_number varchar
+  keywords varchar
+  language varchar
+  "date" date
+  location varchar
+  location_type varchar
+  currency varchar
+  currency_symbol varchar
+  status varchar
+  page_count integer
+  dish_count integer
+}
+
+Table MenuPage as MP {
+  id integer [primary key, unique]
+  menu_id integer [ref: > Menu.id]
+  page_number integer
+  image_id integer
+  full_height integer
+  full_width integer
+  uuid uuid
+}
+
+Table MenuItem as MI {
+  id integer [primary key, unique]
+  menu_page_id integer [ref: > MenuPage.id]
+  price double
+  high_price double
+  dish_id integer [ref: > Dish.id]
+  created_at timestamp
+  updated_at timestamp
+  xpos double
+  ypos double
+}
+
+Table Dish as D {
+  id int [primary key, unique]
+  name varchar
+  description varchar
+  menus_appeared integer
+  times_appeared integer
+  first_appeared integer
+  last_appeared integer
+  lowest_price double
+  highest_price double
+}
