@@ -3332,5 +3332,3164 @@
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column sponsor using expression grel:value.replace(\"\\\"\", \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "grel:value.replace(\"\\\"\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column sponsor using expression grel:value.replace(\"\\\\\", \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "grel:value.replace(\"\\\\\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column sponsor using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column sponsor using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column sponsor using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column sponsor",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hamburgamerica Linie",
+          "Hamburgamerika Line",
+          "Hamburgamerican Line",
+          "Hamburgamerica Line"
+        ],
+        "to": "Hamburg America Line"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column sponsor",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Norddeutscher Lloyd Bremen",
+          "Norddeutcher Lloyd Bremen",
+          "Norddeutecher Lloyd Bremen",
+          "Nordeutcher Lloyd Bremen"
+        ],
+        "to": "Norddeutscher Lloyd Bremen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Compagnie General Transatlantique",
+          "Compagnie Generale Transatlantique",
+          "Compngnie General Transatlantique"
+        ],
+        "to": "Compagnie General Transatlantique"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Waldorf Astoria",
+          "Waldorfastoria",
+          "Walforf Astoria"
+        ],
+        "to": "Waldorf Astoria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hamburgamerika Linie",
+          "Hamburg Amerika Linie",
+          "Hamburg Armerika Linie"
+        ],
+        "to": "Hamburg America Line"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Norddeutscher Lloyd Bremen",
+          "Norddeutcher Lloyd Bremen",
+          "Norddeutecher Lloyd Bremen"
+        ],
+        "to": "Norddeutscher Lloyd Bremen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Smith & Mc Nell",
+          "Smith & Mc Nells",
+          "Smith & Mcnell"
+        ],
+        "to": "Smith & McNell"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Red Star Line Antwerpen Ny",
+          "Red Ster Line Antwerpen Ny",
+          "Red Star Line Antwerpenny"
+        ],
+        "to": "Red Star Line Antwerpen NY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jcigar Leaf Tobacco Board Of Trade Of United States",
+          "Cigar Leaf Tobacco Board Of Trade Of United States"
+        ],
+        "to": "Cigar Leaf Tobacco Board Of Trade Of United States"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hollandamerica Line",
+          "Hollandamerican Line"
+        ],
+        "to": "Holland America Line"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wiehl & Widmann",
+          "Wiehl & Widman"
+        ],
+        "to": "Wiehl & Widmann"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hotel Netherland",
+          "Hotel Nethrland"
+        ],
+        "to": "Hotel Netherland"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Usaarmy Transport Warren",
+          "Usarmy Transport Warren"
+        ],
+        "to": "US Army Transport Warren"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "New York Life Insurance Company",
+          "New York Life Insuance Company"
+        ],
+        "to": "New York Life Insurance Company"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Flat Iron Restaurant",
+          "Flatiron Restaurant"
+        ],
+        "to": "Flatiron Restaurant"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rms Queen Elilzabeth 2",
+          "Rms Queen Elizabeth 2"
+        ],
+        "to": "Rms Queen Elilzabeth 2"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hotel Dangleterre",
+          "Hotel Dangeleterre"
+        ],
+        "to": "Hotel Dangleterre"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Usmsphiladelphia",
+          "Usms Philadelphia"
+        ],
+        "to": "Usms Philadelphia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "State Department Special To Pandamerican Congress At City Of Mexico Pullman Car Service",
+          "State Department Special To Panamerican Congress At City Of Mexico Pullman Car Service"
+        ],
+        "to": "State Department Special To Pandamerican Congress At City Of Mexico Pullman Car Service"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "B&o Blue Line",
+          "B& O Blue Line"
+        ],
+        "to": "B&O Blue Line"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Royal Poinciana",
+          "Royal Ponciana"
+        ],
+        "to": "Royal Poinciana"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hotel Ambassador",
+          "Hotels Ambassador"
+        ],
+        "to": "Hotel Ambassador"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "New England Manufacturing Jewlers And Silversmiths Association",
+          "New England Manufacturing Jewelers And Silversmiths Association"
+        ],
+        "to": "New England Manufacturing Jewlers And Silversmiths Association"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Waldorf Astoria",
+          "Walforf Astoria"
+        ],
+        "to": "Waldorf Astoria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Palace Hotel Restaurat And Ladies Grill Room",
+          "Palace Hotel Restaurant And Ladies Grill Room"
+        ],
+        "to": "Palace Hotel Restaurat And Ladies Grill Room"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ritz Carlton",
+          "Ritzcarlton"
+        ],
+        "to": "Ritz Carlton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hotel Pontchartrain",
+          "Hotel Ponchartrain"
+        ],
+        "to": "Hotel Pontchartrain"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "First Panel Sheriffs Jury",
+          "First Panel Sherfiffs Jury"
+        ],
+        "to": "First Panel Sheriffs Jury"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bailey Catering Co",
+          "Baily Catering Co"
+        ],
+        "to": "Bailey Catering Co"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "King Edward Vii",
+          "King Endward Vii"
+        ],
+        "to": "King Edward VII"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Great Northern System Dining Cars",
+          "Great Northern System Dining Car"
+        ],
+        "to": "Great Northern System Dining Cars"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sphinx Club",
+          "Sphnx Club"
+        ],
+        "to": "Sphinx Club"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Janssens Restaurant",
+          "Jansens Restaurant"
+        ],
+        "to": "Janssens Restaurant"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nordeuscher Lloyd Bremen",
+          "Nordeutcher Lloyd Bremen"
+        ],
+        "to": "Norddeutscher Lloyd Bremen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hotel Mcalpin",
+          "Hotel Mc Alpin"
+        ],
+        "to": "Hotel Mcalpin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schwarzwalders Natur Weinhaus",
+          "Schwarzzwalders Natur Weinhaus"
+        ],
+        "to": "Schwarzwalders Natur Weinhaus"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stockholm Restaurants",
+          "Stockholm Restaurant"
+        ],
+        "to": "Stockholm Restaurant"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Columbia University Restaurant",
+          "Columbia University Restauant"
+        ],
+        "to": "Columbia University Restaurant"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Norddeutscher Lloyd Bremen",
+          "Norddeutscher Lloyds Bremen"
+        ],
+        "to": "Norddeutscher Lloyd Bremen"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column sponsor",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dobbeltskrue Postdampskibet",
+          "Dobbelskrue Postdampskibet"
+        ],
+        "to": "Dobbeltskrue Postdampskibet"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oceanic Steamship Company Sierra",
+          "Oceanic Sreamship Company Sierra"
+        ],
+        "to": "Oceanic Steamship Company Sierra"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wisconsin Bankers Association",
+          "Wisconsin Bankers Asociation"
+        ],
+        "to": "Wisconsin Bankers Association"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aw Dennett",
+          "Awdennett"
+        ],
+        "to": "A W Dennett"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Edward F Langs Ladies And Gents Lunch Room And Restaurant",
+          "Edward F Langss Ladies And Gents Lunch Room And Restaurant"
+        ],
+        "to": "Edward F Langs Ladies And Gents Lunch Room And Restaurant"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ss New Amsterdam",
+          "Ss Niew Amsterdam"
+        ],
+        "to": "Ss New Amsterdam"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column event using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column event using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column event using expression value.toUppercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER",
+          "[DINNER]",
+          "(DINNER)",
+          "DINNER;",
+          "DINNER (?)",
+          "DINNER(?)",
+          "[DINNER?]",
+          "(?DINNER?)",
+          "DINNER,",
+          "DINNER?",
+          "[?DINNER?]",
+          "[DINNER ?]"
+        ],
+        "to": "DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCH",
+          "[LUNCH]",
+          "(?LUNCH?)",
+          "LUNCH;",
+          "[LUNCH?]",
+          "(LUNCH)",
+          "LUNCH (?)",
+          "LUNCH."
+        ],
+        "to": "LUNCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BREAKFAST",
+          "[BREAKFAST]",
+          "BREAKFAST;",
+          "BREAKFAST (?)",
+          "BREAKFAST(?)",
+          "[BREAKFAST ?]"
+        ],
+        "to": "BREAKFAST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU",
+          "(DAILY MENU)",
+          "DAILY MENU;",
+          "[DAILY MENU?]",
+          "[DAILY] MENU"
+        ],
+        "to": "DAILY MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SUPPER",
+          "SUPPER (?)",
+          "SUPPER(?)",
+          "SUPPER;"
+        ],
+        "to": "SUPPER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CARTE DU JOUR",
+          "(CARTE DU JOUR)",
+          "CARTE DU JOUR;"
+        ],
+        "to": "CARTE DU JOUR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCH & DINNER",
+          "LUNCH; DINNER",
+          "[?DINNER? - LUNCH?]"
+        ],
+        "to": "LUNCH & DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FRUHSTUCK-BREAKFAST",
+          "FRUHSTUCK/BREAKFAST",
+          "FRUHSTUCK/BREAKFAST;"
+        ],
+        "to": "BREAKFAST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU, DINNER",
+          "DAILY DINNER MENU",
+          "DAILY MENU; DINNER"
+        ],
+        "to": "DAILY MENU DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "A LA CARTE; DINNER",
+          "DINNER A LA CARTE",
+          "DINNER; A LA CARTE"
+        ],
+        "to": "A LA CARTE DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY LUNCH MENU",
+          "DAILY MENU, LUNCH",
+          "DAILY MENU; LUNCH"
+        ],
+        "to": "DAILY LUNCH MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCH OR DINNER",
+          "DINNER OR LUNCH",
+          "LUNCH &/OR DINNER"
+        ],
+        "to": "LUNCH OR DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNIVERSARY DINNER",
+          "ANNIVERSARY DINNER?",
+          "ANNIVERSARY [DINNER]"
+        ],
+        "to": "ANNIVERSARY DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MITTAGESSEN",
+          "MITTAG-ESSEN",
+          "MITTAGESSEN;"
+        ],
+        "to": "MITTAGESSEN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "INSPECTION TRIP - LUNCHEON",
+          "INSPECTION TRIP, LUNCHEON",
+          "INSPECTION TRIP, LUNCHEON;"
+        ],
+        "to": "INSPECTION TRIP LUNCHEON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BANQUET AND RECEPTION",
+          "RECEPTION AND BANQUET"
+        ],
+        "to": "BANQUET AND RECEPTION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TABLE DHOTE DINNER",
+          "DINNER TABLE DHOTE"
+        ],
+        "to": "TABLE DHOTE DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AFTERNOON TEA",
+          "AFTERNOON TEA ["
+        ],
+        "to": "AFTERNOON TEA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER - SECOND CABIN",
+          "DINNER SECOND CABIN"
+        ],
+        "to": "DINNER SECOND CABIN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "INSPECTION TRIP, DINNER",
+          "INSPECTION TRIP, DINNER;"
+        ],
+        "to": "INSPECTION TRIP DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MITTAGESSEN/DINNER",
+          "MITTAGESSEN[DINNER]"
+        ],
+        "to": "MITTAGESSEN DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WINE LIST",
+          "WINE LIST;"
+        ],
+        "to": "WINE LIST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER,SECOND CABIN",
+          "DINNER-SECOND CABIN"
+        ],
+        "to": "DINNER SECOND CABIN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "REUNION",
+          "[?REUNION?]"
+        ],
+        "to": "REUNION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCHEON TABLE DHOTE",
+          "TABLE DHOTE LUNCHEON"
+        ],
+        "to": "LUNCHEON TABLE DHOTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BREAKFAST AND SUPPER",
+          "SUPPER AND BREAKFAST"
+        ],
+        "to": "BREAKFAST AND SUPPER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WEDDING",
+          "WEDDING(?)"
+        ],
+        "to": "WEDDING"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RECEPTION",
+          "[RECEPTION]"
+        ],
+        "to": "RECEPTION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WASHINGTONS BIRTHDAY BANQUET",
+          "BANQUET (WASHINGTONS BIRTHDAY?)"
+        ],
+        "to": "WASHINGTONS BIRTHDAY BANQUET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ABEND-ESSEN",
+          "ABENDESSEN"
+        ],
+        "to": "ABENDESSEN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MENU",
+          "MENU;"
+        ],
+        "to": "MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNUAL DINNER",
+          "[ANNUAL DINNER?]"
+        ],
+        "to": "ANNUAL DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINER",
+          "[DINER]"
+        ],
+        "to": "DINER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER TO ABOVE",
+          "DINNER TO ABOVE;"
+        ],
+        "to": "DINNER TO ABOVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY LUNCH;",
+          "DAILY LUNCH"
+        ],
+        "to": "DAILY LUNCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCHEON A LA CARTE",
+          "LUNCHEON, A LA CARTE"
+        ],
+        "to": "LUNCHEON A LA CARTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LINCOLNS BIRTHDAY DINNER",
+          "DINNER, LINCOLNS BIRTHDAY"
+        ],
+        "to": "LINCOLNS BIRTHDAY DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FIFTH ANNUAL DINNER",
+          "DINNER, FIFTH ANNUAL"
+        ],
+        "to": "FIFTH ANNUAL DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FRUHSTUCK/LUNCH",
+          "FRUHSTUCK-LUNCH"
+        ],
+        "to": "FRUHSTUCK LUNCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU, BREAKFAST",
+          "DAILY BREAKFAST MENU"
+        ],
+        "to": "DAILY MENU BREAKFAST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU, LUNCHEON",
+          "DAILY LUNCHEON MENU"
+        ],
+        "to": "DAILY MENU LUNCHEON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PRIVATE DINNER",
+          "[PRIVATE DINNER?]"
+        ],
+        "to": "PRIVATE DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "INSPECTION TRIP, BREAKFAST",
+          "INSPECTION TRIP - BREAKFAST"
+        ],
+        "to": "INSPECTION TRIP BREAKFAST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MITTAGESSEN - DINNER",
+          "MITTAGESSEN [DINNER]"
+        ],
+        "to": "MITTAGESSEN DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCH-DINNER",
+          "LUNCH;DINNER"
+        ],
+        "to": "LUNCH DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MIDDAG/DINNER",
+          "MIDDAG-DINNER"
+        ],
+        "to": "MIDDAG DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY BILL OF FARE",
+          "DAILY BILL OF FARE;"
+        ],
+        "to": "DAILY BILL OF FARE"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCHEON",
+          "[LUNCHEON]",
+          "LUNCHEON;"
+        ],
+        "to": "LUNCHEON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCH & DINNER",
+          "LUNCH DINNER"
+        ],
+        "to": "LUNCH DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BREAKFAST (?) HELD BY NORDEUTSCHER LLOYD BREMEN AT ON BOARD THE SS GEORGE WASHINGTON",
+          "BREAKFAST HELD BY NORDEUTSCHER LLOYD BREMEN AT ON BOARD THE SS GEORGE WASHINGTON"
+        ],
+        "to": "BREAKFAST HELD BY NORDEUTSCHER LLOYD BREMEN AT ON BOARD THE SS GEORGE WASHINGTON"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER/DINER",
+          "DINER/DINNER",
+          "DINNER, DINER"
+        ],
+        "to": "DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU LUNCHEON",
+          "DAILY MENU,LUNCHEON"
+        ],
+        "to": "DAILY MENU LUNCHEON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WEDDING DINNER",
+          "(WEDDING)DINNER"
+        ],
+        "to": "WEDDING DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BREAKFAST - SECOND CABIN",
+          "BREAKFAST-SECOND CABIN"
+        ],
+        "to": "BREAKFAST SECOND CABIN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BREAKFAST,LUNCH & DINNER",
+          "BREAKFAST; LUNCH; DINNER"
+        ],
+        "to": "BREAKFAST LUNCH DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU, SUPPER",
+          "DAILY MENU,SUPPER"
+        ],
+        "to": "DAILY MENU SUPPER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER",
+          "DINNNER"
+        ],
+        "to": "DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DEJEUNER FOURCHETTE/LUNCHEON",
+          "DEJEUNER FOURCHETTE/ LUNCHEON"
+        ],
+        "to": "DEJEUNER FOURCHETTE LUNCHEON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "(DINNER DANCE)",
+          "DINNER-DANCE"
+        ],
+        "to": "DINNER DANCE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FOURTH OF JULY DINNER",
+          "FOURTH OFJULY DINNER"
+        ],
+        "to": "FOURTH OF JULY DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU DINNER",
+          "DAILY MENU,DINNER"
+        ],
+        "to": "DAILY MENU DINNER"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WASHINGTONS BIRTHDAY",
+          "WASHINGT0NS BIRTHDAY"
+        ],
+        "to": "WASHINGTONS BIRTHDAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SUPPER",
+          "SOUPER"
+        ],
+        "to": "SUPPER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCHEON",
+          "LINCHEON"
+        ],
+        "to": "LUNCHEON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCH AND DINNER",
+          "LUMCH AND DINNER"
+        ],
+        "to": "LUNCH DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "THANKSGIVING DINNER",
+          "THNAKSGIVING DINNER"
+        ],
+        "to": "THANKSGIVING DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHRISTMAS DINNER",
+          "CHRISTMAS DINNR"
+        ],
+        "to": "CHRISTMAS DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SUPPER MENU",
+          "SUPPER MEN"
+        ],
+        "to": "SUPPER MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "INSPECTION TRIP DINNER",
+          "INSPECTION TRIP - DINER"
+        ],
+        "to": "INSPECTION TRIP DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BREAKFAST - A LA CARTE",
+          "BREAKFAST ˆ LA CARTE"
+        ],
+        "to": "BREAKFAST A LA CARTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER ˆ LA CARTE",
+          "DINNER-A LA CARTE"
+        ],
+        "to": "DINNER A LA CARTE"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DINNER A LA CARTE",
+          "A LA CARTE DINNER"
+        ],
+        "to": "DINNER A LA CARTE"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU",
+          "DAILY MENUS"
+        ],
+        "to": "DAILY MENU"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "?"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column event using expression grel:value.replace(\"\\\"\", \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "grel:value.replace(\"\\\"\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column event using expression grel:value.replace(/[()]/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "grel:value.replace(/[()]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column event using expression grel:value.replace(/\\[|\\]|\\?/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "grel:value.replace(/\\[|\\]|\\?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column event",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EIGHTH ANNUAL DINNER",
+          "EIGHT ANNUAL DINNER",
+          "EIGTH ANNUAL DINNER"
+        ],
+        "to": "EIGHTH ANNUAL DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU - 11;30 T0 3;00",
+          "DAILY MENU - 11;30 TO 3;00",
+          "DAILY MENU, TEA"
+        ],
+        "to": "DAILY MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MITTAGESSEN",
+          "MITAGESSEN",
+          "MITTAGESEN"
+        ],
+        "to": "MITTAGESSEN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNUAL DINNER",
+          "12 ANNUAL DINNER"
+        ],
+        "to": "ANNUAL DINNER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LUNCH A LA CARTE",
+          "LUNCH ˆ LA CARTE"
+        ],
+        "to": "LUNCH A LA CARTE"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression grel:value.replace(\"\\\"\", \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(\"\\\"\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression grel:value.replace(/[()]/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(/[()]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression grel:value.replace(/\\[|\\]|\\?/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(/\\[|\\]|\\?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression grel:value.replace(/[;.,-]/, \" \")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(/[;.,-]/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression value.toUppercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOC POL",
+          "POL SOC"
+        ],
+        "to": "SOC POL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COM",
+          "COM}"
+        ],
+        "to": "COM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOC",
+          "SOC:"
+        ],
+        "to": "SOC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GOVT",
+          "GOV'T"
+        ],
+        "to": "GOVT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER PRIVATE PARTY SINGLE HOST",
+          "OTHER SINGLE HOST PRIVATE PARTY"
+        ],
+        "to": "OTHER PRIVATE PARTY SINGLE HOST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOC COM",
+          "COM SOC"
+        ],
+        "to": "SOC COM"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER PERSONAL",
+          "OTHERPERSONAL"
+        ],
+        "to": "OTHER PERSONAL"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER PRIVATE HOSTS",
+          "OTHER PRIVATE HOST",
+          "OTHER PRIVATE HOSTESS"
+        ],
+        "to": "OTHER PRIVATE HOSTS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COMMERCIAL",
+          "CMMERCIAL"
+        ],
+        "to": "COMMERCIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER PRIVATE INDIVIDUAL",
+          "OTHER PRIVATE INDIVIDUAL HOST"
+        ],
+        "to": "OTHER PRIVATE INDIVIDUAL HOST"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER INDIVIDUAL",
+          "PTHER INDIVIDUAL"
+        ],
+        "to": "OTHER INDIVIDUAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "OTHER PRIVATE PATY"
+        ],
+        "to": "OTHER PRIVATE PARTY"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FOREIGN",
+          "FOREIGNEIGN"
+        ],
+        "to": "FOREIGN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER PRIVATE HOSTS",
+          "OTHER TWO PRIVATE HOSTS"
+        ],
+        "to": "OTHER PRIVATE HOSTS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER PRIVATE PARTY SINGLE HOST",
+          "OTHER PRIVATE PARTY BY SINGLE HOST"
+        ],
+        "to": "OTHER PRIVATE PARTY SINGLE HOST"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column venue using expression grel:value.replace(\"NULL\", \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(\"NULL\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOC"
+        ],
+        "to": "SOCIAL"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COM"
+        ],
+        "to": "COMMERCIAL"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COMM"
+        ],
+        "to": "COMMERCIAL"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EDUC"
+        ],
+        "to": "EDUCATIONAL"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MILIT"
+        ],
+        "to": "MILITARY"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MIL"
+        ],
+        "to": "MILITARY"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column venue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UNKNOWN"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ";"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "?"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression grel:value.replace(/[;.,-]/, \" \")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "grel:value.replace(/[;.,-]/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression grel:value.replace(/\\[|\\]|\\?/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "grel:value.replace(/\\[|\\]|\\?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression grel:value.replace(\"\\\"\", \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "grel:value.replace(\"\\\"\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression grel:value.replace(/[()]/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "grel:value.replace(/[()]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression value.toUppercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column occasion using expression grel:value.replace(/[{}]/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "grel:value.replace(/[{}]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER DAILY DATED MENU",
+          "OTHER DATED DAILY MENU"
+        ],
+        "to": "OTHER DAILY DATED MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PATRIOTIC HOLIDAY",
+          "PATRIOTIC HOLIDAY HOLIDAY"
+        ],
+        "to": "PATRIOTIC HOLIDAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SECULAR HOLIDAY",
+          "SECULAR HOLIDAY HOLIDAY"
+        ],
+        "to": "SECULAR HOLIDAY"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DAILY MENU",
+          "DAILYMENU"
+        ],
+        "to": "DAILY MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "REUNION",
+          "RE UNION"
+        ],
+        "to": "REUNION"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER SOC",
+          "OTHER S0C",
+          "OTHR SOC"
+        ],
+        "to": "OTHER SOC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNIVERSARY",
+          "ANIVERSARY"
+        ],
+        "to": "ANNIVERSARY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COMPL",
+          "C0MPL"
+        ],
+        "to": "COMPL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNIVERSARY COMP",
+          "ANNIVERSARY/COMPL"
+        ],
+        "to": "ANNIVERSARY COMP"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NULL"
+        ],
+        "to": ""
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNIV",
+          "ANIV"
+        ],
+        "to": "ANNIVERSARY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER COMMEMORATIVE",
+          "OTHER COMMEMORTIVE"
+        ],
+        "to": "OTHER COMMEMORATIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNUAL",
+          "AMNNUAL"
+        ],
+        "to": "ANNUAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER DAILY HOTEL MENU",
+          "OTHEER DAILY HOTEL MENU"
+        ],
+        "to": "OTHER DAILY HOTEL MENU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNIVERSARY",
+          "113 ANNIVERSARY"
+        ],
+        "to": "ANNIVERSARY"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER COMMEMORATION",
+          "OTHER COMMEMOATION"
+        ],
+        "to": "OTHER COMMEMORATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER COMMEMORATIVE",
+          "OTHER COMMEMOATIVE"
+        ],
+        "to": "OTHER COMMEMORATIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER ANNIV",
+          "0THER ANNIV"
+        ],
+        "to": "OTHER ANNIV"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER SOC",
+          "0THER SOC"
+        ],
+        "to": "OTHER SOC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER COMMEMORATIVE",
+          "OTHER COMMEMORATIE"
+        ],
+        "to": "OTHER COMMEMORATIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER SOC",
+          "OHER SOC"
+        ],
+        "to": "OTHER SOC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER ANNIVERSARY",
+          "OTHER ANNIVERARY"
+        ],
+        "to": "OTHER ANNIVERSARY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNIVERSARYERSARY",
+          "ANNIVERSARYESARY"
+        ],
+        "to": "ANNIVERSARYERSARY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER COMMEMORATIVE",
+          "0THER COMMEMORATIVE"
+        ],
+        "to": "OTHER COMMEMORATIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SECULAR HOLIDAY",
+          "SECULAR HOLIDAYL"
+        ],
+        "to": "SECULAR HOLIDAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER REUNION",
+          "OTHER REUNTION"
+        ],
+        "to": "OTHER REUNION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COMMEMOATIVE",
+          "COMMEMORATIVE"
+        ],
+        "to": "COMMEMOATIVE"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column occasion",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANNIVERSARY",
+          "ANNIVERSARYERSARY"
+        ],
+        "to": "ANNIVERSARY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OTHER COMMEMORATIVE",
+          "OTHER COMMEMORATION"
+        ],
+        "to": "OTHER COMMEMORATIVE"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(/[-.,;]/, \"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(/[-.,;]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.toLowercase()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(/copy\\s*\\d+\\b/, \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(/copy\\s*\\d+\\b/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\"o\", \"0\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\"o\", \"0\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(/[il]/, \"1\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(/[il]/, \"1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(/[=\\/]/, \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(/[=\\/]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\"s0ete\", \"soete\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\"s0ete\", \"soete\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\"(2 c0p1es)\", \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\"(2 c0p1es)\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(/1tem.+/, \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(/1tem.+/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(/0vers1.+/, \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(/0vers1.+/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(/thru.+/, \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(/thru.+/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\" &2\", \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\" &2\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.trim()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\"_w0tm\", \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\"_w0tm\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\" (3 c0p1es)\", \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\" (3 c0p1es)\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\"ab\", \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\"ab\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column call_number using expression grel:value.replace(\"ac\", \"\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "call_number",
+          "expression": "value",
+          "columnName": "call_number",
+          "from": 0,
+          "to": 200000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "call_number",
+    "expression": "grel:value.replace(\"ac\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column keywords",
+    "columnName": "keywords"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column language",
+    "columnName": "language"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column date using expression value.toDate()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column place using expression value.trim()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "date",
+          "expression": "value",
+          "columnName": "date",
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": false,
+          "selectError": true,
+          "from": -56165875200000,
+          "to": -4473770400000
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "place",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column place using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "date",
+          "expression": "value",
+          "columnName": "date",
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": false,
+          "selectError": true,
+          "from": -56165875200000,
+          "to": -4473770400000
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "place",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column location using expression value.trim()",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "date",
+          "expression": "value",
+          "columnName": "date",
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": false,
+          "selectError": true,
+          "from": -56165875200000,
+          "to": -4473770400000
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column location using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "date",
+          "expression": "value",
+          "columnName": "date",
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": false,
+          "selectError": true,
+          "from": -56165875200000,
+          "to": -4473770400000
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column date using expression value.toDate()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column page_count using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "page_count",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column dish_count using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "dish_count",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
   }
 ]
