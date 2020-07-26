@@ -1,3 +1,11 @@
-Reference dataset: https://piazza.com/class_profile/get_resource/ka5fvby750l21z/kbqpzyztzbv681
-Menu cleaned: https://uofi.box.com/s/qja6rke5whlroiiqmqce29xj7vmx2ih0
-Menu page cleaned: https://uofi.box.com/s/0vb499nvz8mg1q7k0ic2b8q7e5ytbdfs
+Reference dataset: 
+- https://piazza.com/class_profile/get_resource/ka5fvby750l21z/kbqpzyztzbv681
+
+Cleaned files:
+- Menu: https://uofi.box.com/s/qja6rke5whlroiiqmqce29xj7vmx2ih0
+- Menu Page: https://uofi.box.com/s/k1k018btths29801w5q6hv1y2xa1zazt
+- Dish: https://uofi.box.com/s/ach4khjbk4n517iyjgllzi3yl6dvvv8v
+- Menu Item: https://uofi.box.com/s/100j97ejfi8e54gj76k4cfvl63n2kcf1
+
+SQLite DB:
+- https://uofi.box.com/s/h1fpehehgoj0fdsnckw2d2kmq0ya0y3w
