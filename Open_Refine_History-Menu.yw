@@ -1,0 +1,444 @@
+#@begin Parallel_OR #@desc Parallel OpenRefine Workflow
+#@param expression:sub_ops_38
+#@param expression:sub_ops_28
+#@param expression:sub_ops_1
+#@param expression:sub_ops_15
+#@param expression:sub_ops_17
+#@param expression:sub_ops_22
+#@param expression:sub_ops_45
+#@param expression:grel:value.replace("NULL",_"")
+#@param expression:sub_ops_30
+#@param expression:sub_ops_32
+#@param expression:sub_ops_19
+#@param expression:value
+#@param expression:sub_ops_31
+#@param expression:sub_ops_39
+#@param expression:sub_ops_9
+#@param expression:sub_ops_29
+#@param expression:sub_ops_36
+#@param expression:sub_ops_6
+#@param expression:sub_ops_13
+#@param expression:sub_ops_18
+#@param expression:sub_ops_23
+#@param expression:grel:value.replace(".",_"")
+#@param expression:sub_ops_2
+#@param expression:sub_ops_3
+#@param expression:sub_ops_35
+#@param expression:sub_ops_4
+#@param expression:sub_ops_46
+#@param expression:sub_ops_7
+#@param expression:sub_ops_26
+#@param expression:sub_ops_44
+#@param expression:sub_ops_21
+#@param expression:sub_ops_42
+#@param expression:sub_ops_11
+#@param expression:grel:if(isBlank(value),_"FOLDER",_"")
+#@param expression:sub_ops_8
+#@param expression:sub_ops_14
+#@param expression:grel:value.replace(/\\b(AND|S)\\b/,_"")
+#@param expression:sub_ops_34
+#@param expression:grel:value.replace("È",_"E")
+#@param expression:sub_ops_37
+#@param expression:sub_ops_27
+#@param expression:sub_ops_43
+#@param expression:sub_ops_41
+#@param expression:sub_ops_33
+#@param expression:sub_ops_16
+#@param expression:sub_ops_12
+#@param expression:sub_ops_40
+#@param expression:sub_ops_47
+#@param expression:sub_ops_10
+#@param expression:sub_ops_5
+#@param expression:sub_ops_20
+#@param expression:sub_ops_25
+#@param expression:sub_ops_24
+#@param expression:value.toNumber()
+#@in location
+#@in physical_description_12
+#@in venue
+#@in event
+#@in venue_1
+#@in physical_description_1
+#@in physical_size
+#@in id
+#@in event_2
+#@in language
+#@in call_number
+#@in physical_description_4
+#@in physical_description_5
+#@in physical_description_17
+#@in name_3
+#@in physical_description_20
+#@in event_3
+#@in location_3
+#@in physical_description_9
+#@in keywords
+#@in physical_description_15
+#@in notes
+#@in physical_description_16
+#@in place_1
+#@in physical_description_19
+#@in sponsor_4
+#@in date
+#@in occasion_2
+#@in sponsor_2
+#@in sponsor_1
+#@in venue_2
+#@in sponsor_3
+#@in physical_description_18
+#@in location_2
+#@in occasion
+#@in event_1
+#@in physical_description_7
+#@in venue_3
+#@in place_3
+#@in physical_description_6
+#@in place
+#@in sponsor_5
+#@in occasion_1
+#@in physical_description
+#@in physical_description_2
+#@in physical_description_14
+#@in physical_description_type
+#@in page_count
+#@in name_2
+#@in sponsor
+#@in name_4
+#@in physical_description_13
+#@in physical_description_3
+#@in dish_count
+#@in name_1
+#@in physical_description_10
+#@in physical_description_11
+#@in name
+#@in place_2
+#@in location_1
+#@in physical_description_8
+#@out CleanData
+#@begin core/text-transform0 #@desc Text transform on cells in column id using expression value.toNumber()
+#@param expression:value.toNumber()
+#@in id
+#@out id_1
+#@end core/text-transform0
+#@begin group_1_core/mass-edit1 #@desc group of core/mass-edit with 3 operations, details in sub_ops_1.json
+#@param expression:sub_ops_1
+#@in name
+#@out name_1
+#@end group_1_core/mass-edit1
+#@begin group_2_core/text-transform2 #@desc group of core/text-transform with 9 operations, details in sub_ops_2.json
+#@param expression:sub_ops_2
+#@in name_1
+#@out name_2
+#@end group_2_core/text-transform2
+#@begin group_3_core/mass-edit3 #@desc group of core/mass-edit with 4 operations, details in sub_ops_3.json
+#@param expression:sub_ops_3
+#@in name_2
+#@out name_3
+#@end group_3_core/mass-edit3
+#@begin group_4_core/text-transform4 #@desc group of core/text-transform with 4 operations, details in sub_ops_4.json
+#@param expression:sub_ops_4
+#@in name_3
+#@out name_4
+#@end group_4_core/text-transform4
+#@begin group_5_core/mass-edit5 #@desc group of core/mass-edit with 4 operations, details in sub_ops_5.json
+#@param expression:sub_ops_5
+#@in name_4
+#@out name_5
+#@end group_5_core/mass-edit5
+#@begin group_6_core/text-transform6 #@desc group of core/text-transform with 8 operations, details in sub_ops_6.json
+#@param expression:sub_ops_6
+#@in sponsor
+#@out sponsor_1
+#@end group_6_core/text-transform6
+#@begin core/mass-edit7 #@desc Mass edit cells in column sponsor
+#@param expression:value
+#@in sponsor_1
+#@out sponsor_2
+#@end core/mass-edit7
+#@begin core/text-transform8 #@desc Text transform on cells in column sponsor using expression grel:value.replace(\".\", \"\")
+#@param expression:grel:value.replace(".",_"")
+#@in sponsor_2
+#@out sponsor_3
+#@end core/text-transform8
+#@begin group_7_core/mass-edit9 #@desc group of core/mass-edit with 6 operations, details in sub_ops_7.json
+#@param expression:sub_ops_7
+#@in sponsor_3
+#@out sponsor_4
+#@end group_7_core/mass-edit9
+#@begin group_8_core/text-transform10 #@desc group of core/text-transform with 9 operations, details in sub_ops_8.json
+#@param expression:sub_ops_8
+#@in sponsor_4
+#@out sponsor_5
+#@end group_8_core/text-transform10
+#@begin group_9_core/mass-edit11 #@desc group of core/mass-edit with 3 operations, details in sub_ops_9.json
+#@param expression:sub_ops_9
+#@in sponsor_5
+#@out sponsor_6
+#@end group_9_core/mass-edit11
+#@begin group_10_core/text-transform12 #@desc group of core/text-transform with 4 operations, details in sub_ops_10.json
+#@param expression:sub_ops_10
+#@in event
+#@out event_1
+#@end group_10_core/text-transform12
+#@begin group_11_core/mass-edit13 #@desc group of core/mass-edit with 7 operations, details in sub_ops_11.json
+#@param expression:sub_ops_11
+#@in event_1
+#@out event_2
+#@end group_11_core/mass-edit13
+#@begin group_12_core/text-transform14 #@desc group of core/text-transform with 3 operations, details in sub_ops_12.json
+#@param expression:sub_ops_12
+#@in event_2
+#@out event_3
+#@end group_12_core/text-transform14
+#@begin core/mass-edit15 #@desc Mass edit cells in column event
+#@param expression:value
+#@in event_3
+#@out event_4
+#@end core/mass-edit15
+#@begin group_13_core/text-transform16 #@desc group of core/text-transform with 7 operations, details in sub_ops_13.json
+#@param expression:sub_ops_13
+#@in venue
+#@out venue_1
+#@end group_13_core/text-transform16
+#@begin group_14_core/mass-edit17 #@desc group of core/mass-edit with 5 operations, details in sub_ops_14.json
+#@param expression:sub_ops_14
+#@in venue_1
+#@out venue_2
+#@end group_14_core/mass-edit17
+#@begin core/text-transform18 #@desc Text transform on cells in column venue using expression grel:value.replace(\"NULL\", \"\")
+#@param expression:grel:value.replace("NULL",_"")
+#@in venue_2
+#@out venue_3
+#@end core/text-transform18
+#@begin group_15_core/mass-edit19 #@desc group of core/mass-edit with 8 operations, details in sub_ops_15.json
+#@param expression:sub_ops_15
+#@in venue_3
+#@out venue_4
+#@end group_15_core/mass-edit19
+#@begin group_16_core/mass-edit20 #@desc group of core/mass-edit with 2 operations, details in sub_ops_16.json
+#@param expression:sub_ops_16
+#@in occasion
+#@out occasion_1
+#@end group_16_core/mass-edit20
+#@begin group_17_core/text-transform21 #@desc group of core/text-transform with 8 operations, details in sub_ops_17.json
+#@param expression:sub_ops_17
+#@in occasion_1
+#@out occasion_2
+#@end group_17_core/text-transform21
+#@begin group_18_core/mass-edit22 #@desc group of core/mass-edit with 7 operations, details in sub_ops_18.json
+#@param expression:sub_ops_18
+#@in occasion_2
+#@out occasion_3
+#@end group_18_core/mass-edit22
+#@begin group_19_core/text-transform23 #@desc group of core/text-transform with 26 operations, details in sub_ops_19.json
+#@param expression:sub_ops_19
+#@in call_number
+#@out call_number_1
+#@end group_19_core/text-transform23
+#@begin core/column-removal24 #@desc Remove column keywords
+#@in keywords
+#@out remove-keywords
+#@end core/column-removal24
+#@begin core/column-removal25 #@desc Remove column language
+#@in language
+#@out remove-language
+#@end core/column-removal25
+#@begin group_20_core/text-transform26 #@desc group of core/text-transform with 2 operations, details in sub_ops_20.json
+#@param expression:sub_ops_20
+#@in date
+#@out date_1
+#@end group_20_core/text-transform26
+#@begin group_21_core/text-transform27 #@desc group of core/text-transform with 12 operations, details in sub_ops_21.json
+#@param expression:sub_ops_21
+#@in place
+#@out place_1
+#@end group_21_core/text-transform27
+#@begin group_22_core/mass-edit28 #@desc group of core/mass-edit with 4 operations, details in sub_ops_22.json
+#@param expression:sub_ops_22
+#@in place_1
+#@out place_2
+#@end group_22_core/mass-edit28
+#@begin core/text-transform29 #@desc Text transform on cells in column place using expression grel:value.replace(\"È\", \"E\")
+#@param expression:grel:value.replace("È",_"E")
+#@in place_2
+#@out place_3
+#@end core/text-transform29
+#@begin group_23_core/mass-edit30 #@desc group of core/mass-edit with 5 operations, details in sub_ops_23.json
+#@param expression:sub_ops_23
+#@in place_3
+#@out place_4
+#@end group_23_core/mass-edit30
+#@begin group_24_core/text-transform31 #@desc group of core/text-transform with 2 operations, details in sub_ops_24.json
+#@param expression:sub_ops_24
+#@in location
+#@out location_1
+#@end group_24_core/text-transform31
+#@begin group_25_core/mass-edit32 #@desc group of core/mass-edit with 2 operations, details in sub_ops_25.json
+#@param expression:sub_ops_25
+#@in location_1
+#@out location_2
+#@end group_25_core/mass-edit32
+#@begin group_26_core/text-transform33 #@desc group of core/text-transform with 11 operations, details in sub_ops_26.json
+#@param expression:sub_ops_26
+#@in location_2
+#@out location_3
+#@end group_26_core/text-transform33
+#@begin group_27_core/mass-edit34 #@desc group of core/mass-edit with 7 operations, details in sub_ops_27.json
+#@param expression:sub_ops_27
+#@in location_3
+#@out location_4
+#@end group_27_core/mass-edit34
+#@begin core/text-transform35 #@desc Text transform on cells in column page_count using expression value.toNumber()
+#@param expression:value.toNumber()
+#@in page_count
+#@out page_count_1
+#@end core/text-transform35
+#@begin core/text-transform36 #@desc Text transform on cells in column dish_count using expression value.toNumber()
+#@param expression:value.toNumber()
+#@in dish_count
+#@out dish_count_1
+#@end core/text-transform36
+#@begin group_28_core/text-transform37 #@desc group of core/text-transform with 6 operations, details in sub_ops_28.json
+#@param expression:sub_ops_28
+#@in notes
+#@out notes_1
+#@end group_28_core/text-transform37
+#@begin group_29_core/text-transform38 #@desc group of core/text-transform with 10 operations, details in sub_ops_29.json
+#@param expression:sub_ops_29
+#@in physical_description
+#@out physical_description_1
+#@end group_29_core/text-transform38
+#@begin group_30_core/mass-edit39 #@desc group of core/mass-edit with 5 operations, details in sub_ops_30.json
+#@param expression:sub_ops_30
+#@in physical_description_1
+#@out physical_description_2
+#@end group_30_core/mass-edit39
+#@begin group_31_core/text-transform40 #@desc group of core/text-transform with 5 operations, details in sub_ops_31.json
+#@param expression:sub_ops_31
+#@in physical_description_2
+#@out physical_description_3
+#@end group_31_core/text-transform40
+#@begin core/mass-edit41 #@desc Mass edit cells in column physical_description
+#@param expression:value
+#@in physical_description_3
+#@out physical_description_4
+#@end core/mass-edit41
+#@begin group_32_core/text-transform42 #@desc group of core/text-transform with 6 operations, details in sub_ops_32.json
+#@param expression:sub_ops_32
+#@in physical_description_4
+#@out physical_description_5
+#@end group_32_core/text-transform42
+#@begin group_33_core/mass-edit43 #@desc group of core/mass-edit with 3 operations, details in sub_ops_33.json
+#@param expression:sub_ops_33
+#@in physical_description_5
+#@out physical_description_6
+#@end group_33_core/mass-edit43
+#@begin group_34_core/text-transform44 #@desc group of core/text-transform with 3 operations, details in sub_ops_34.json
+#@param expression:sub_ops_34
+#@in physical_description_6
+#@out physical_description_7
+#@end group_34_core/text-transform44
+#@begin group_35_core/mass-edit45 #@desc group of core/mass-edit with 5 operations, details in sub_ops_35.json
+#@param expression:sub_ops_35
+#@in physical_description_7
+#@out physical_description_8
+#@end group_35_core/mass-edit45
+#@begin group_36_core/text-transform46 #@desc group of core/text-transform with 3 operations, details in sub_ops_36.json
+#@param expression:sub_ops_36
+#@in physical_description_8
+#@out physical_description_9
+#@end group_36_core/text-transform46
+#@begin group_37_core/mass-edit47 #@desc group of core/mass-edit with 13 operations, details in sub_ops_37.json
+#@param expression:sub_ops_37
+#@in physical_description_9
+#@out physical_description_10
+#@end group_37_core/mass-edit47
+#@begin group_38_core/text-transform48 #@desc group of core/text-transform with 3 operations, details in sub_ops_38.json
+#@param expression:sub_ops_38
+#@in physical_description_10
+#@out physical_description_11
+#@end group_38_core/text-transform48
+#@begin group_39_core/mass-edit49 #@desc group of core/mass-edit with 9 operations, details in sub_ops_39.json
+#@param expression:sub_ops_39
+#@in physical_description_11
+#@out physical_description_12
+#@end group_39_core/mass-edit49
+#@begin group_40_core/text-transform50 #@desc group of core/text-transform with 4 operations, details in sub_ops_40.json
+#@param expression:sub_ops_40
+#@in physical_description_12
+#@out physical_description_13
+#@end group_40_core/text-transform50
+#@begin group_41_core/mass-edit51 #@desc group of core/mass-edit with 6 operations, details in sub_ops_41.json
+#@param expression:sub_ops_41
+#@in physical_description_13
+#@out physical_description_14
+#@end group_41_core/mass-edit51
+#@begin group_42_core/text-transform52 #@desc group of core/text-transform with 3 operations, details in sub_ops_42.json
+#@param expression:sub_ops_42
+#@in physical_description_14
+#@out physical_description_15
+#@end group_42_core/text-transform52
+#@begin core/mass-edit53 #@desc Mass edit cells in column physical_description
+#@param expression:value
+#@in physical_description_15
+#@out physical_description_16
+#@end core/mass-edit53
+#@begin group_43_core/text-transform54 #@desc group of core/text-transform with 5 operations, details in sub_ops_43.json
+#@param expression:sub_ops_43
+#@in physical_description_16
+#@out physical_description_17
+#@end group_43_core/text-transform54
+#@begin group_44_core/mass-edit55 #@desc group of core/mass-edit with 27 operations, details in sub_ops_44.json
+#@param expression:sub_ops_44
+#@in physical_description_17
+#@out physical_description_18
+#@end group_44_core/mass-edit55
+#@begin group_45_core/text-transform56 #@desc group of core/text-transform with 3 operations, details in sub_ops_45.json
+#@param expression:sub_ops_45
+#@in physical_description_18
+#@out physical_description_19
+#@end group_45_core/text-transform56
+#@begin group_46_core/mass-edit57 #@desc group of core/mass-edit with 6 operations, details in sub_ops_46.json
+#@param expression:sub_ops_46
+#@in physical_description_19
+#@out physical_description_20
+#@end group_46_core/mass-edit57
+#@begin core/text-transform58 #@desc Text transform on cells in column physical_description using expression grel:value.replace(/\\b(AND|S)\\b/, \"\")
+#@param expression:grel:value.replace(/\\b(AND|S)\\b/,_"")
+#@in physical_description_20
+#@out physical_description_21
+#@end core/text-transform58
+#@begin group_47_core/text-transform59 #@desc group of core/text-transform with 4 operations, details in sub_ops_47.json
+#@param expression:sub_ops_47
+#@in physical_size
+#@out physical_size_1
+#@end group_47_core/text-transform59
+#@begin core/text-transform60 #@desc Text transform on cells in column physical_description_type using expression grel:if(isBlank(value), \"FOLDER\", \"\")
+#@param expression:grel:if(isBlank(value),_"FOLDER",_"")
+#@in physical_description_type
+#@out physical_description_type_1
+#@end core/text-transform60
+#@begin CombineDataCleaningChanges
+#@in id_1
+#@in name_5
+#@in sponsor_6
+#@in event_4
+#@in venue_4
+#@in occasion_3
+#@in call_number_1
+#@in keywords
+#@in remove-keywords
+#@in language
+#@in remove-language
+#@in date_1
+#@in place_4
+#@in location_4
+#@in page_count_1
+#@in dish_count_1
+#@in notes_1
+#@in physical_description_21
+#@in physical_size_1
+#@in physical_description_type_1
+#@out CleanData
+#@end CombineDataCleaningChanges
+#@end Parallel_OR

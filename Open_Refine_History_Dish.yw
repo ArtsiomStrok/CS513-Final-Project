@@ -1,0 +1,192 @@
+#@begin Linear_OR #@desc Linear OpenRefine Workflow
+#@param col-name:lowest_price
+#@param col-name:menus_appeared
+#@param col-name:description
+#@param expression:value.toTitlecase()
+#@param expression:value.replace(/\\s+/,'_')
+#@param col-name:times_appeared
+#@param col-name:highest_price
+#@param expression:grel:cells['menus_appeared'].value
+#@param col-name:name
+#@param col-name:first_appeared
+#@param expression:value.unescape('html')
+#@param col-name:last_appeared
+#@param expression:value.trim()
+#@param expression:value.toNumber()
+#@param expression:grel:0
+#@param expression:grel:value.replace("\\"",_"")
+#@in table0
+#@out table30
+#@begin core/text-transform0#@desc Text transform on cells in column name using expression value.toTitlecase()
+#@param col-name:name
+#@param expression:value.toTitlecase()
+#@in table0
+#@out table1
+#@end core/text-transform0
+#@begin core/text-transform1#@desc Text transform on cells in column name using expression value.trim()
+#@param col-name:name
+#@param expression:value.trim()
+#@in table1
+#@out table2
+#@end core/text-transform1
+#@begin core/text-transform2#@desc Text transform on cells in column name using expression value.replace(/\\s+/,' ')
+#@param col-name:name
+#@param expression:value.replace(/\\s+/,'_')
+#@in table2
+#@out table3
+#@end core/text-transform2
+#@begin core/column-removal0#@desc Remove column description
+#@param col-name:description
+#@in table3
+#@out table4
+#@end core/column-removal0
+#@begin core/text-transform3#@desc Text transform on cells in column menus_appeared using expression value.toNumber()
+#@param col-name:menus_appeared
+#@param expression:value.toNumber()
+#@in table4
+#@out table5
+#@end core/text-transform3
+#@begin core/text-transform4#@desc Text transform on cells in column times_appeared using expression value.toNumber()
+#@param col-name:times_appeared
+#@param expression:value.toNumber()
+#@in table5
+#@out table6
+#@end core/text-transform4
+#@begin core/text-transform5#@desc Text transform on cells in column first_appeared using expression value.toNumber()
+#@param col-name:first_appeared
+#@param expression:value.toNumber()
+#@in table6
+#@out table7
+#@end core/text-transform5
+#@begin core/text-transform6#@desc Text transform on cells in column last_appeared using expression value.toNumber()
+#@param col-name:last_appeared
+#@param expression:value.toNumber()
+#@in table7
+#@out table8
+#@end core/text-transform6
+#@begin core/text-transform7#@desc Text transform on cells in column lowest_price using expression value.toNumber()
+#@param col-name:lowest_price
+#@param expression:value.toNumber()
+#@in table8
+#@out table9
+#@end core/text-transform7
+#@begin core/text-transform8#@desc Text transform on cells in column highest_price using expression value.toNumber()
+#@param col-name:highest_price
+#@param expression:value.toNumber()
+#@in table9
+#@out table10
+#@end core/text-transform8
+#@begin core/text-transform9#@desc Text transform on cells in column name using expression value.unescape('html')
+#@param col-name:name
+#@param expression:value.unescape('html')
+#@in table10
+#@out table11
+#@end core/text-transform9
+#@begin core/mass-edit0#@desc Mass edit cells in column first_appeared
+#@param col-name:first_appeared
+#@in table11
+#@out table12
+#@end core/mass-edit0
+#@begin core/mass-edit1#@desc Mass edit cells in column last_appeared
+#@param col-name:last_appeared
+#@in table12
+#@out table13
+#@end core/mass-edit1
+#@begin core/mass-edit2#@desc Mass edit cells in column last_appeared
+#@param col-name:last_appeared
+#@in table13
+#@out table14
+#@end core/mass-edit2
+#@begin core/mass-edit3#@desc Mass edit cells in column first_appeared
+#@param col-name:first_appeared
+#@in table14
+#@out table15
+#@end core/mass-edit3
+#@begin core/text-transform10#@desc Text transform on cells in column first_appeared using expression value.toNumber()
+#@param col-name:first_appeared
+#@param expression:value.toNumber()
+#@in table15
+#@out table16
+#@end core/text-transform10
+#@begin core/text-transform11#@desc Text transform on cells in column last_appeared using expression value.toNumber()
+#@param col-name:last_appeared
+#@param expression:value.toNumber()
+#@in table16
+#@out table17
+#@end core/text-transform11
+#@begin core/mass-edit4#@desc Mass edit cells in column times_appeared
+#@param col-name:times_appeared
+#@in table17
+#@out table18
+#@end core/mass-edit4
+#@begin core/mass-edit5#@desc Mass edit cells in column times_appeared
+#@param col-name:times_appeared
+#@in table18
+#@out table19
+#@end core/mass-edit5
+#@begin core/mass-edit6#@desc Mass edit cells in column times_appeared
+#@param col-name:times_appeared
+#@in table19
+#@out table20
+#@end core/mass-edit6
+#@begin core/text-transform12#@desc Text transform on cells in column times_appeared using expression value.toNumber()
+#@param col-name:times_appeared
+#@param expression:value.toNumber()
+#@in table20
+#@out table21
+#@end core/text-transform12
+#@begin core/text-transform13#@desc Text transform on cells in column times_appeared using expression grel:cells['menus_appeared'].value
+#@param col-name:times_appeared
+#@param expression:grel:cells['menus_appeared'].value
+#@in table21
+#@out table22
+#@end core/text-transform13
+#@begin core/text-transform14#@desc Text transform on cells in column times_appeared using expression value.toNumber()
+#@param col-name:times_appeared
+#@param expression:value.toNumber()
+#@in table22
+#@out table23
+#@end core/text-transform14
+#@begin core/text-transform15#@desc Text transform on cells in column menus_appeared using expression value.toNumber()
+#@param col-name:menus_appeared
+#@param expression:value.toNumber()
+#@in table23
+#@out table24
+#@end core/text-transform15
+#@begin core/text-transform16#@desc Text transform on cells in column first_appeared using expression grel:0
+#@param col-name:first_appeared
+#@param expression:grel:0
+#@in table24
+#@out table25
+#@end core/text-transform16
+#@begin core/text-transform17#@desc Text transform on cells in column last_appeared using expression grel:0
+#@param col-name:last_appeared
+#@param expression:grel:0
+#@in table25
+#@out table26
+#@end core/text-transform17
+#@begin core/text-transform18#@desc Text transform on cells in column name using expression grel:value.replace(\"\\\"\", \"\")
+#@param col-name:name
+#@param expression:grel:value.replace("\\"",_"")
+#@in table26
+#@out table27
+#@end core/text-transform18
+#@begin core/text-transform19#@desc Text transform on cells in column name using expression value.trim()
+#@param col-name:name
+#@param expression:value.trim()
+#@in table27
+#@out table28
+#@end core/text-transform19
+#@begin core/text-transform20#@desc Text transform on cells in column name using expression value.replace(/\\s+/,' ')
+#@param col-name:name
+#@param expression:value.replace(/\\s+/,'_')
+#@in table28
+#@out table29
+#@end core/text-transform20
+#@begin core/text-transform21#@desc Text transform on cells in column name using expression value.toTitlecase()
+#@param col-name:name
+#@param expression:value.toTitlecase()
+#@in table29
+#@out table30
+#@end core/text-transform21
+#@end Linear_OR
