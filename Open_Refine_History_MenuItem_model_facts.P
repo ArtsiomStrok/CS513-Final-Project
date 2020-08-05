@@ -1,0 +1,262 @@
+
+% FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
+program(1, 'Linear_OR', 'Linear_OR', 1, 62).
+program(2, 'core/text-transform0#', 'Linear_OR.core/text-transform0#', 13, 19).
+program(3, 'core/text-transform1#', 'Linear_OR.core/text-transform1#', 20, 26).
+program(4, 'core/text-transform2#', 'Linear_OR.core/text-transform2#', 27, 33).
+program(5, 'core/text-transform3#', 'Linear_OR.core/text-transform3#', 34, 40).
+program(6, 'core/text-transform4#', 'Linear_OR.core/text-transform4#', 41, 47).
+program(7, 'core/text-transform5#', 'Linear_OR.core/text-transform5#', 48, 54).
+program(8, 'core/text-transform6#', 'Linear_OR.core/text-transform6#', 55, 61).
+
+% FACT: workflow(program_id).
+workflow(1).
+
+% FACT: function(program_id).
+
+% FACT: has_subprogram(program_id, subprogram_id).
+has_subprogram(1, 2).
+has_subprogram(1, 3).
+has_subprogram(1, 4).
+has_subprogram(1, 5).
+has_subprogram(1, 6).
+has_subprogram(1, 7).
+has_subprogram(1, 8).
+
+% FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
+port(1, 'param', 'col-name:xpos', 'Linear_OR<-col-name:xpos', 3, 1).
+port(2, 'param', 'col-name:high_price', 'Linear_OR<-col-name:high_price', 4, 2).
+port(3, 'param', 'expression:value.toNumber()', 'Linear_OR<-expression:value.toNumber()', 5, 3).
+port(4, 'param', 'col-name:menu_page_id', 'Linear_OR<-col-name:menu_page_id', 6, 4).
+port(5, 'param', 'col-name:price', 'Linear_OR<-col-name:price', 7, 5).
+port(6, 'param', 'col-name:dish_id', 'Linear_OR<-col-name:dish_id', 8, 6).
+port(7, 'param', 'col-name:ypos', 'Linear_OR<-col-name:ypos', 9, 7).
+port(8, 'param', 'col-name:id', 'Linear_OR<-col-name:id', 10, 8).
+port(9, 'in', 'table0', 'Linear_OR<-table0', 11, 9).
+port(10, 'out', 'table7', 'Linear_OR->table7', 12, 10).
+port(11, 'param', 'col-name:id', 'Linear_OR.core/text-transform0#<-col-name:id', 15, 11).
+port(12, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform0#<-expression:value.toNumber()', 16, 12).
+port(13, 'in', 'table0', 'Linear_OR.core/text-transform0#<-table0', 17, 13).
+port(14, 'out', 'table1', 'Linear_OR.core/text-transform0#->table1', 18, 14).
+port(15, 'param', 'col-name:menu_page_id', 'Linear_OR.core/text-transform1#<-col-name:menu_page_id', 22, 15).
+port(16, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform1#<-expression:value.toNumber()', 23, 12).
+port(17, 'in', 'table1', 'Linear_OR.core/text-transform1#<-table1', 24, 14).
+port(18, 'out', 'table2', 'Linear_OR.core/text-transform1#->table2', 25, 16).
+port(19, 'param', 'col-name:price', 'Linear_OR.core/text-transform2#<-col-name:price', 29, 17).
+port(20, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform2#<-expression:value.toNumber()', 30, 12).
+port(21, 'in', 'table2', 'Linear_OR.core/text-transform2#<-table2', 31, 16).
+port(22, 'out', 'table3', 'Linear_OR.core/text-transform2#->table3', 32, 18).
+port(23, 'param', 'col-name:high_price', 'Linear_OR.core/text-transform3#<-col-name:high_price', 36, 19).
+port(24, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform3#<-expression:value.toNumber()', 37, 12).
+port(25, 'in', 'table3', 'Linear_OR.core/text-transform3#<-table3', 38, 18).
+port(26, 'out', 'table4', 'Linear_OR.core/text-transform3#->table4', 39, 20).
+port(27, 'param', 'col-name:dish_id', 'Linear_OR.core/text-transform4#<-col-name:dish_id', 43, 21).
+port(28, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform4#<-expression:value.toNumber()', 44, 12).
+port(29, 'in', 'table4', 'Linear_OR.core/text-transform4#<-table4', 45, 20).
+port(30, 'out', 'table5', 'Linear_OR.core/text-transform4#->table5', 46, 22).
+port(31, 'param', 'col-name:xpos', 'Linear_OR.core/text-transform5#<-col-name:xpos', 50, 23).
+port(32, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform5#<-expression:value.toNumber()', 51, 12).
+port(33, 'in', 'table5', 'Linear_OR.core/text-transform5#<-table5', 52, 22).
+port(34, 'out', 'table6', 'Linear_OR.core/text-transform5#->table6', 53, 24).
+port(35, 'param', 'col-name:ypos', 'Linear_OR.core/text-transform6#<-col-name:ypos', 57, 25).
+port(36, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform6#<-expression:value.toNumber()', 58, 12).
+port(37, 'in', 'table6', 'Linear_OR.core/text-transform6#<-table6', 59, 24).
+port(38, 'out', 'table7', 'Linear_OR.core/text-transform6#->table7', 60, 26).
+
+% FACT: port_alias(port_id, alias).
+
+% FACT: port_uri_template(port_id, uri).
+
+% FACT: has_in_port(block_id, port_id).
+has_in_port(1, 1).
+has_in_port(1, 2).
+has_in_port(1, 3).
+has_in_port(1, 4).
+has_in_port(1, 5).
+has_in_port(1, 6).
+has_in_port(1, 7).
+has_in_port(1, 8).
+has_in_port(1, 9).
+has_in_port(2, 11).
+has_in_port(2, 12).
+has_in_port(2, 13).
+has_in_port(3, 15).
+has_in_port(3, 16).
+has_in_port(3, 17).
+has_in_port(4, 19).
+has_in_port(4, 20).
+has_in_port(4, 21).
+has_in_port(5, 23).
+has_in_port(5, 24).
+has_in_port(5, 25).
+has_in_port(6, 27).
+has_in_port(6, 28).
+has_in_port(6, 29).
+has_in_port(7, 31).
+has_in_port(7, 32).
+has_in_port(7, 33).
+has_in_port(8, 35).
+has_in_port(8, 36).
+has_in_port(8, 37).
+
+% FACT: has_out_port(block_id, port_id).
+has_out_port(1, 10).
+has_out_port(2, 14).
+has_out_port(3, 18).
+has_out_port(4, 22).
+has_out_port(5, 26).
+has_out_port(6, 30).
+has_out_port(7, 34).
+has_out_port(8, 38).
+
+% FACT: data(data_id, data_name, qualified_data_name).
+data(1, 'col-name:xpos', '[col-name:xpos]').
+data(2, 'col-name:high_price', '[col-name:high_price]').
+data(3, 'expression:value.toNumber()', '[expression:value.toNumber()]').
+data(4, 'col-name:menu_page_id', '[col-name:menu_page_id]').
+data(5, 'col-name:price', '[col-name:price]').
+data(6, 'col-name:dish_id', '[col-name:dish_id]').
+data(7, 'col-name:ypos', '[col-name:ypos]').
+data(8, 'col-name:id', '[col-name:id]').
+data(9, 'table0', '[table0]').
+data(10, 'table7', '[table7]').
+data(11, 'col-name:id', 'Linear_OR[col-name:id]').
+data(12, 'expression:value.toNumber()', 'Linear_OR[expression:value.toNumber()]').
+data(13, 'table0', 'Linear_OR[table0]').
+data(14, 'table1', 'Linear_OR[table1]').
+data(15, 'col-name:menu_page_id', 'Linear_OR[col-name:menu_page_id]').
+data(16, 'table2', 'Linear_OR[table2]').
+data(17, 'col-name:price', 'Linear_OR[col-name:price]').
+data(18, 'table3', 'Linear_OR[table3]').
+data(19, 'col-name:high_price', 'Linear_OR[col-name:high_price]').
+data(20, 'table4', 'Linear_OR[table4]').
+data(21, 'col-name:dish_id', 'Linear_OR[col-name:dish_id]').
+data(22, 'table5', 'Linear_OR[table5]').
+data(23, 'col-name:xpos', 'Linear_OR[col-name:xpos]').
+data(24, 'table6', 'Linear_OR[table6]').
+data(25, 'col-name:ypos', 'Linear_OR[col-name:ypos]').
+data(26, 'table7', 'Linear_OR[table7]').
+
+% FACT: channel(channel_id, data_id).
+channel(1, 10).
+channel(2, 11).
+channel(3, 12).
+channel(4, 12).
+channel(5, 12).
+channel(6, 12).
+channel(7, 12).
+channel(8, 12).
+channel(9, 12).
+channel(10, 13).
+channel(11, 15).
+channel(12, 14).
+channel(13, 17).
+channel(14, 16).
+channel(15, 19).
+channel(16, 18).
+channel(17, 21).
+channel(18, 20).
+channel(19, 23).
+channel(20, 22).
+channel(21, 25).
+channel(22, 24).
+channel(23, 1).
+channel(24, 2).
+channel(25, 3).
+channel(26, 3).
+channel(27, 3).
+channel(28, 3).
+channel(29, 3).
+channel(30, 3).
+channel(31, 3).
+channel(32, 4).
+channel(33, 5).
+channel(34, 6).
+channel(35, 7).
+channel(36, 8).
+channel(37, 9).
+channel(38, 26).
+
+% FACT: port_connects_to_channel(port_id, channel_id).
+port_connects_to_channel(38, 1).
+port_connects_to_channel(11, 2).
+port_connects_to_channel(12, 3).
+port_connects_to_channel(16, 4).
+port_connects_to_channel(20, 5).
+port_connects_to_channel(24, 6).
+port_connects_to_channel(28, 7).
+port_connects_to_channel(32, 8).
+port_connects_to_channel(36, 9).
+port_connects_to_channel(13, 10).
+port_connects_to_channel(15, 11).
+port_connects_to_channel(14, 12).
+port_connects_to_channel(17, 12).
+port_connects_to_channel(19, 13).
+port_connects_to_channel(18, 14).
+port_connects_to_channel(21, 14).
+port_connects_to_channel(23, 15).
+port_connects_to_channel(22, 16).
+port_connects_to_channel(25, 16).
+port_connects_to_channel(27, 17).
+port_connects_to_channel(26, 18).
+port_connects_to_channel(29, 18).
+port_connects_to_channel(31, 19).
+port_connects_to_channel(30, 20).
+port_connects_to_channel(33, 20).
+port_connects_to_channel(35, 21).
+port_connects_to_channel(34, 22).
+port_connects_to_channel(37, 22).
+port_connects_to_channel(31, 23).
+port_connects_to_channel(23, 24).
+port_connects_to_channel(12, 25).
+port_connects_to_channel(16, 26).
+port_connects_to_channel(20, 27).
+port_connects_to_channel(24, 28).
+port_connects_to_channel(28, 29).
+port_connects_to_channel(32, 30).
+port_connects_to_channel(36, 31).
+port_connects_to_channel(15, 32).
+port_connects_to_channel(19, 33).
+port_connects_to_channel(27, 34).
+port_connects_to_channel(35, 35).
+port_connects_to_channel(11, 36).
+port_connects_to_channel(13, 37).
+port_connects_to_channel(38, 38).
+
+% FACT: inflow_connects_to_channel(port_id, channel_id).
+inflow_connects_to_channel(8, 2).
+inflow_connects_to_channel(3, 3).
+inflow_connects_to_channel(3, 4).
+inflow_connects_to_channel(3, 5).
+inflow_connects_to_channel(3, 6).
+inflow_connects_to_channel(3, 7).
+inflow_connects_to_channel(3, 8).
+inflow_connects_to_channel(3, 9).
+inflow_connects_to_channel(9, 10).
+inflow_connects_to_channel(4, 11).
+inflow_connects_to_channel(5, 13).
+inflow_connects_to_channel(2, 15).
+inflow_connects_to_channel(6, 17).
+inflow_connects_to_channel(1, 19).
+inflow_connects_to_channel(7, 21).
+inflow_connects_to_channel(1, 23).
+inflow_connects_to_channel(2, 24).
+inflow_connects_to_channel(3, 25).
+inflow_connects_to_channel(3, 26).
+inflow_connects_to_channel(3, 27).
+inflow_connects_to_channel(3, 28).
+inflow_connects_to_channel(3, 29).
+inflow_connects_to_channel(3, 30).
+inflow_connects_to_channel(3, 31).
+inflow_connects_to_channel(4, 32).
+inflow_connects_to_channel(5, 33).
+inflow_connects_to_channel(6, 34).
+inflow_connects_to_channel(7, 35).
+inflow_connects_to_channel(8, 36).
+inflow_connects_to_channel(9, 37).
+
+% FACT: outflow_connects_to_channel(port_id, channel_id).
+outflow_connects_to_channel(10, 1).
+outflow_connects_to_channel(10, 38).
+
+% FACT: uri_variable(uri_variable_id, variable_name, port_id).

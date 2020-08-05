@@ -1,0 +1,77 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './Open_Refine_History_MenuItem.yw').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 1, 'begin', '@begin', 'Linear_OR').
+annotation(2, 1, 1, 'desc', '@desc', 'Linear OpenRefine Workflow').
+annotation(3, 1, 2, 'param', '@param', 'col-name:xpos').
+annotation(4, 1, 3, 'param', '@param', 'col-name:high_price').
+annotation(5, 1, 4, 'param', '@param', 'expression:value.toNumber()').
+annotation(6, 1, 5, 'param', '@param', 'col-name:menu_page_id').
+annotation(7, 1, 6, 'param', '@param', 'col-name:price').
+annotation(8, 1, 7, 'param', '@param', 'col-name:dish_id').
+annotation(9, 1, 8, 'param', '@param', 'col-name:ypos').
+annotation(10, 1, 9, 'param', '@param', 'col-name:id').
+annotation(11, 1, 10, 'in', '@in', 'table0').
+annotation(12, 1, 11, 'out', '@out', 'table7').
+annotation(13, 1, 12, 'begin', '@begin', 'core/text-transform0#').
+annotation(14, 1, 12, 'desc', '@desc', 'Text transform on cells in column id using expression value.toNumber()').
+annotation(15, 1, 13, 'param', '@param', 'col-name:id').
+annotation(16, 1, 14, 'param', '@param', 'expression:value.toNumber()').
+annotation(17, 1, 15, 'in', '@in', 'table0').
+annotation(18, 1, 16, 'out', '@out', 'table1').
+annotation(19, 1, 17, 'end', '@end', 'core/text-transform0').
+annotation(20, 1, 18, 'begin', '@begin', 'core/text-transform1#').
+annotation(21, 1, 18, 'desc', '@desc', 'Text transform on cells in column menu_page_id using expression value.toNumber()').
+annotation(22, 1, 19, 'param', '@param', 'col-name:menu_page_id').
+annotation(23, 1, 20, 'param', '@param', 'expression:value.toNumber()').
+annotation(24, 1, 21, 'in', '@in', 'table1').
+annotation(25, 1, 22, 'out', '@out', 'table2').
+annotation(26, 1, 23, 'end', '@end', 'core/text-transform1').
+annotation(27, 1, 24, 'begin', '@begin', 'core/text-transform2#').
+annotation(28, 1, 24, 'desc', '@desc', 'Text transform on cells in column price using expression value.toNumber()').
+annotation(29, 1, 25, 'param', '@param', 'col-name:price').
+annotation(30, 1, 26, 'param', '@param', 'expression:value.toNumber()').
+annotation(31, 1, 27, 'in', '@in', 'table2').
+annotation(32, 1, 28, 'out', '@out', 'table3').
+annotation(33, 1, 29, 'end', '@end', 'core/text-transform2').
+annotation(34, 1, 30, 'begin', '@begin', 'core/text-transform3#').
+annotation(35, 1, 30, 'desc', '@desc', 'Text transform on cells in column high_price using expression value.toNumber()').
+annotation(36, 1, 31, 'param', '@param', 'col-name:high_price').
+annotation(37, 1, 32, 'param', '@param', 'expression:value.toNumber()').
+annotation(38, 1, 33, 'in', '@in', 'table3').
+annotation(39, 1, 34, 'out', '@out', 'table4').
+annotation(40, 1, 35, 'end', '@end', 'core/text-transform3').
+annotation(41, 1, 36, 'begin', '@begin', 'core/text-transform4#').
+annotation(42, 1, 36, 'desc', '@desc', 'Text transform on cells in column dish_id using expression value.toNumber()').
+annotation(43, 1, 37, 'param', '@param', 'col-name:dish_id').
+annotation(44, 1, 38, 'param', '@param', 'expression:value.toNumber()').
+annotation(45, 1, 39, 'in', '@in', 'table4').
+annotation(46, 1, 40, 'out', '@out', 'table5').
+annotation(47, 1, 41, 'end', '@end', 'core/text-transform4').
+annotation(48, 1, 42, 'begin', '@begin', 'core/text-transform5#').
+annotation(49, 1, 42, 'desc', '@desc', 'Text transform on cells in column xpos using expression value.toNumber()').
+annotation(50, 1, 43, 'param', '@param', 'col-name:xpos').
+annotation(51, 1, 44, 'param', '@param', 'expression:value.toNumber()').
+annotation(52, 1, 45, 'in', '@in', 'table5').
+annotation(53, 1, 46, 'out', '@out', 'table6').
+annotation(54, 1, 47, 'end', '@end', 'core/text-transform5').
+annotation(55, 1, 48, 'begin', '@begin', 'core/text-transform6#').
+annotation(56, 1, 48, 'desc', '@desc', 'Text transform on cells in column ypos using expression value.toNumber()').
+annotation(57, 1, 49, 'param', '@param', 'col-name:ypos').
+annotation(58, 1, 50, 'param', '@param', 'expression:value.toNumber()').
+annotation(59, 1, 51, 'in', '@in', 'table6').
+annotation(60, 1, 52, 'out', '@out', 'table7').
+annotation(61, 1, 53, 'end', '@end', 'core/text-transform6').
+annotation(62, 1, 54, 'end', '@end', 'Linear_OR').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(2, 1).
+annotation_qualifies(14, 13).
+annotation_qualifies(21, 20).
+annotation_qualifies(28, 27).
+annotation_qualifies(35, 34).
+annotation_qualifies(42, 41).
+annotation_qualifies(49, 48).
+annotation_qualifies(56, 55).

@@ -1,0 +1,828 @@
+
+% FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
+program(1, 'Linear_OR', 'Linear_OR', 1, 223).
+program(2, 'core/text-transform0#', 'Linear_OR.core/text-transform0#', 21, 27).
+program(3, 'core/text-transform1#', 'Linear_OR.core/text-transform1#', 28, 34).
+program(4, 'core/text-transform2#', 'Linear_OR.core/text-transform2#', 35, 41).
+program(5, 'core/column-removal0#', 'Linear_OR.core/column-removal0#', 42, 47).
+program(6, 'core/text-transform3#', 'Linear_OR.core/text-transform3#', 48, 54).
+program(7, 'core/text-transform4#', 'Linear_OR.core/text-transform4#', 55, 61).
+program(8, 'core/text-transform5#', 'Linear_OR.core/text-transform5#', 62, 68).
+program(9, 'core/text-transform6#', 'Linear_OR.core/text-transform6#', 69, 75).
+program(10, 'core/text-transform7#', 'Linear_OR.core/text-transform7#', 76, 82).
+program(11, 'core/text-transform8#', 'Linear_OR.core/text-transform8#', 83, 89).
+program(12, 'core/text-transform9#', 'Linear_OR.core/text-transform9#', 90, 96).
+program(13, 'core/mass-edit0#', 'Linear_OR.core/mass-edit0#', 97, 102).
+program(14, 'core/mass-edit1#', 'Linear_OR.core/mass-edit1#', 103, 108).
+program(15, 'core/mass-edit2#', 'Linear_OR.core/mass-edit2#', 109, 114).
+program(16, 'core/mass-edit3#', 'Linear_OR.core/mass-edit3#', 115, 120).
+program(17, 'core/text-transform10#', 'Linear_OR.core/text-transform10#', 121, 127).
+program(18, 'core/text-transform11#', 'Linear_OR.core/text-transform11#', 128, 134).
+program(19, 'core/mass-edit4#', 'Linear_OR.core/mass-edit4#', 135, 140).
+program(20, 'core/mass-edit5#', 'Linear_OR.core/mass-edit5#', 141, 146).
+program(21, 'core/mass-edit6#', 'Linear_OR.core/mass-edit6#', 147, 152).
+program(22, 'core/text-transform12#', 'Linear_OR.core/text-transform12#', 153, 159).
+program(23, 'core/text-transform13#', 'Linear_OR.core/text-transform13#', 160, 166).
+program(24, 'core/text-transform14#', 'Linear_OR.core/text-transform14#', 167, 173).
+program(25, 'core/text-transform15#', 'Linear_OR.core/text-transform15#', 174, 180).
+program(26, 'core/text-transform16#', 'Linear_OR.core/text-transform16#', 181, 187).
+program(27, 'core/text-transform17#', 'Linear_OR.core/text-transform17#', 188, 194).
+program(28, 'core/text-transform18#', 'Linear_OR.core/text-transform18#', 195, 201).
+program(29, 'core/text-transform19#', 'Linear_OR.core/text-transform19#', 202, 208).
+program(30, 'core/text-transform20#', 'Linear_OR.core/text-transform20#', 209, 215).
+program(31, 'core/text-transform21#', 'Linear_OR.core/text-transform21#', 216, 222).
+
+% FACT: workflow(program_id).
+workflow(1).
+
+% FACT: function(program_id).
+
+% FACT: has_subprogram(program_id, subprogram_id).
+has_subprogram(1, 2).
+has_subprogram(1, 3).
+has_subprogram(1, 4).
+has_subprogram(1, 5).
+has_subprogram(1, 6).
+has_subprogram(1, 7).
+has_subprogram(1, 8).
+has_subprogram(1, 9).
+has_subprogram(1, 10).
+has_subprogram(1, 11).
+has_subprogram(1, 12).
+has_subprogram(1, 13).
+has_subprogram(1, 14).
+has_subprogram(1, 15).
+has_subprogram(1, 16).
+has_subprogram(1, 17).
+has_subprogram(1, 18).
+has_subprogram(1, 19).
+has_subprogram(1, 20).
+has_subprogram(1, 21).
+has_subprogram(1, 22).
+has_subprogram(1, 23).
+has_subprogram(1, 24).
+has_subprogram(1, 25).
+has_subprogram(1, 26).
+has_subprogram(1, 27).
+has_subprogram(1, 28).
+has_subprogram(1, 29).
+has_subprogram(1, 30).
+has_subprogram(1, 31).
+
+% FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
+port(1, 'param', 'col-name:lowest_price', 'Linear_OR<-col-name:lowest_price', 3, 1).
+port(2, 'param', 'col-name:menus_appeared', 'Linear_OR<-col-name:menus_appeared', 4, 2).
+port(3, 'param', 'col-name:description', 'Linear_OR<-col-name:description', 5, 3).
+port(4, 'param', 'expression:value.toTitlecase()', 'Linear_OR<-expression:value.toTitlecase()', 6, 4).
+port(5, 'param', 'expression:value.replace(/\\s+/,'_')', 'Linear_OR<-expression:value.replace(/\\s+/,'_')', 7, 5).
+port(6, 'param', 'col-name:times_appeared', 'Linear_OR<-col-name:times_appeared', 8, 6).
+port(7, 'param', 'col-name:highest_price', 'Linear_OR<-col-name:highest_price', 9, 7).
+port(8, 'param', 'expression:grel:cells['menus_appeared'].value', 'Linear_OR<-expression:grel:cells['menus_appeared'].value', 10, 8).
+port(9, 'param', 'col-name:name', 'Linear_OR<-col-name:name', 11, 9).
+port(10, 'param', 'col-name:first_appeared', 'Linear_OR<-col-name:first_appeared', 12, 10).
+port(11, 'param', 'expression:value.unescape('html')', 'Linear_OR<-expression:value.unescape('html')', 13, 11).
+port(12, 'param', 'col-name:last_appeared', 'Linear_OR<-col-name:last_appeared', 14, 12).
+port(13, 'param', 'expression:value.trim()', 'Linear_OR<-expression:value.trim()', 15, 13).
+port(14, 'param', 'expression:value.toNumber()', 'Linear_OR<-expression:value.toNumber()', 16, 14).
+port(15, 'param', 'expression:grel:0', 'Linear_OR<-expression:grel:0', 17, 15).
+port(16, 'param', 'expression:grel:value.replace("\\"",_"")', 'Linear_OR<-expression:grel:value.replace("\\"",_"")', 18, 16).
+port(17, 'in', 'table0', 'Linear_OR<-table0', 19, 17).
+port(18, 'out', 'table30', 'Linear_OR->table30', 20, 18).
+port(19, 'param', 'col-name:name', 'Linear_OR.core/text-transform0#<-col-name:name', 23, 19).
+port(20, 'param', 'expression:value.toTitlecase()', 'Linear_OR.core/text-transform0#<-expression:value.toTitlecase()', 24, 20).
+port(21, 'in', 'table0', 'Linear_OR.core/text-transform0#<-table0', 25, 21).
+port(22, 'out', 'table1', 'Linear_OR.core/text-transform0#->table1', 26, 22).
+port(23, 'param', 'col-name:name', 'Linear_OR.core/text-transform1#<-col-name:name', 30, 19).
+port(24, 'param', 'expression:value.trim()', 'Linear_OR.core/text-transform1#<-expression:value.trim()', 31, 23).
+port(25, 'in', 'table1', 'Linear_OR.core/text-transform1#<-table1', 32, 22).
+port(26, 'out', 'table2', 'Linear_OR.core/text-transform1#->table2', 33, 24).
+port(27, 'param', 'col-name:name', 'Linear_OR.core/text-transform2#<-col-name:name', 37, 19).
+port(28, 'param', 'expression:value.replace(/\\s+/,'_')', 'Linear_OR.core/text-transform2#<-expression:value.replace(/\\s+/,'_')', 38, 25).
+port(29, 'in', 'table2', 'Linear_OR.core/text-transform2#<-table2', 39, 24).
+port(30, 'out', 'table3', 'Linear_OR.core/text-transform2#->table3', 40, 26).
+port(31, 'param', 'col-name:description', 'Linear_OR.core/column-removal0#<-col-name:description', 44, 27).
+port(32, 'in', 'table3', 'Linear_OR.core/column-removal0#<-table3', 45, 26).
+port(33, 'out', 'table4', 'Linear_OR.core/column-removal0#->table4', 46, 28).
+port(34, 'param', 'col-name:menus_appeared', 'Linear_OR.core/text-transform3#<-col-name:menus_appeared', 50, 29).
+port(35, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform3#<-expression:value.toNumber()', 51, 30).
+port(36, 'in', 'table4', 'Linear_OR.core/text-transform3#<-table4', 52, 28).
+port(37, 'out', 'table5', 'Linear_OR.core/text-transform3#->table5', 53, 31).
+port(38, 'param', 'col-name:times_appeared', 'Linear_OR.core/text-transform4#<-col-name:times_appeared', 57, 32).
+port(39, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform4#<-expression:value.toNumber()', 58, 30).
+port(40, 'in', 'table5', 'Linear_OR.core/text-transform4#<-table5', 59, 31).
+port(41, 'out', 'table6', 'Linear_OR.core/text-transform4#->table6', 60, 33).
+port(42, 'param', 'col-name:first_appeared', 'Linear_OR.core/text-transform5#<-col-name:first_appeared', 64, 34).
+port(43, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform5#<-expression:value.toNumber()', 65, 30).
+port(44, 'in', 'table6', 'Linear_OR.core/text-transform5#<-table6', 66, 33).
+port(45, 'out', 'table7', 'Linear_OR.core/text-transform5#->table7', 67, 35).
+port(46, 'param', 'col-name:last_appeared', 'Linear_OR.core/text-transform6#<-col-name:last_appeared', 71, 36).
+port(47, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform6#<-expression:value.toNumber()', 72, 30).
+port(48, 'in', 'table7', 'Linear_OR.core/text-transform6#<-table7', 73, 35).
+port(49, 'out', 'table8', 'Linear_OR.core/text-transform6#->table8', 74, 37).
+port(50, 'param', 'col-name:lowest_price', 'Linear_OR.core/text-transform7#<-col-name:lowest_price', 78, 38).
+port(51, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform7#<-expression:value.toNumber()', 79, 30).
+port(52, 'in', 'table8', 'Linear_OR.core/text-transform7#<-table8', 80, 37).
+port(53, 'out', 'table9', 'Linear_OR.core/text-transform7#->table9', 81, 39).
+port(54, 'param', 'col-name:highest_price', 'Linear_OR.core/text-transform8#<-col-name:highest_price', 85, 40).
+port(55, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform8#<-expression:value.toNumber()', 86, 30).
+port(56, 'in', 'table9', 'Linear_OR.core/text-transform8#<-table9', 87, 39).
+port(57, 'out', 'table10', 'Linear_OR.core/text-transform8#->table10', 88, 41).
+port(58, 'param', 'col-name:name', 'Linear_OR.core/text-transform9#<-col-name:name', 92, 19).
+port(59, 'param', 'expression:value.unescape('html')', 'Linear_OR.core/text-transform9#<-expression:value.unescape('html')', 93, 42).
+port(60, 'in', 'table10', 'Linear_OR.core/text-transform9#<-table10', 94, 41).
+port(61, 'out', 'table11', 'Linear_OR.core/text-transform9#->table11', 95, 43).
+port(62, 'param', 'col-name:first_appeared', 'Linear_OR.core/mass-edit0#<-col-name:first_appeared', 99, 34).
+port(63, 'in', 'table11', 'Linear_OR.core/mass-edit0#<-table11', 100, 43).
+port(64, 'out', 'table12', 'Linear_OR.core/mass-edit0#->table12', 101, 44).
+port(65, 'param', 'col-name:last_appeared', 'Linear_OR.core/mass-edit1#<-col-name:last_appeared', 105, 36).
+port(66, 'in', 'table12', 'Linear_OR.core/mass-edit1#<-table12', 106, 44).
+port(67, 'out', 'table13', 'Linear_OR.core/mass-edit1#->table13', 107, 45).
+port(68, 'param', 'col-name:last_appeared', 'Linear_OR.core/mass-edit2#<-col-name:last_appeared', 111, 36).
+port(69, 'in', 'table13', 'Linear_OR.core/mass-edit2#<-table13', 112, 45).
+port(70, 'out', 'table14', 'Linear_OR.core/mass-edit2#->table14', 113, 46).
+port(71, 'param', 'col-name:first_appeared', 'Linear_OR.core/mass-edit3#<-col-name:first_appeared', 117, 34).
+port(72, 'in', 'table14', 'Linear_OR.core/mass-edit3#<-table14', 118, 46).
+port(73, 'out', 'table15', 'Linear_OR.core/mass-edit3#->table15', 119, 47).
+port(74, 'param', 'col-name:first_appeared', 'Linear_OR.core/text-transform10#<-col-name:first_appeared', 123, 34).
+port(75, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform10#<-expression:value.toNumber()', 124, 30).
+port(76, 'in', 'table15', 'Linear_OR.core/text-transform10#<-table15', 125, 47).
+port(77, 'out', 'table16', 'Linear_OR.core/text-transform10#->table16', 126, 48).
+port(78, 'param', 'col-name:last_appeared', 'Linear_OR.core/text-transform11#<-col-name:last_appeared', 130, 36).
+port(79, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform11#<-expression:value.toNumber()', 131, 30).
+port(80, 'in', 'table16', 'Linear_OR.core/text-transform11#<-table16', 132, 48).
+port(81, 'out', 'table17', 'Linear_OR.core/text-transform11#->table17', 133, 49).
+port(82, 'param', 'col-name:times_appeared', 'Linear_OR.core/mass-edit4#<-col-name:times_appeared', 137, 32).
+port(83, 'in', 'table17', 'Linear_OR.core/mass-edit4#<-table17', 138, 49).
+port(84, 'out', 'table18', 'Linear_OR.core/mass-edit4#->table18', 139, 50).
+port(85, 'param', 'col-name:times_appeared', 'Linear_OR.core/mass-edit5#<-col-name:times_appeared', 143, 32).
+port(86, 'in', 'table18', 'Linear_OR.core/mass-edit5#<-table18', 144, 50).
+port(87, 'out', 'table19', 'Linear_OR.core/mass-edit5#->table19', 145, 51).
+port(88, 'param', 'col-name:times_appeared', 'Linear_OR.core/mass-edit6#<-col-name:times_appeared', 149, 32).
+port(89, 'in', 'table19', 'Linear_OR.core/mass-edit6#<-table19', 150, 51).
+port(90, 'out', 'table20', 'Linear_OR.core/mass-edit6#->table20', 151, 52).
+port(91, 'param', 'col-name:times_appeared', 'Linear_OR.core/text-transform12#<-col-name:times_appeared', 155, 32).
+port(92, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform12#<-expression:value.toNumber()', 156, 30).
+port(93, 'in', 'table20', 'Linear_OR.core/text-transform12#<-table20', 157, 52).
+port(94, 'out', 'table21', 'Linear_OR.core/text-transform12#->table21', 158, 53).
+port(95, 'param', 'col-name:times_appeared', 'Linear_OR.core/text-transform13#<-col-name:times_appeared', 162, 32).
+port(96, 'param', 'expression:grel:cells['menus_appeared'].value', 'Linear_OR.core/text-transform13#<-expression:grel:cells['menus_appeared'].value', 163, 54).
+port(97, 'in', 'table21', 'Linear_OR.core/text-transform13#<-table21', 164, 53).
+port(98, 'out', 'table22', 'Linear_OR.core/text-transform13#->table22', 165, 55).
+port(99, 'param', 'col-name:times_appeared', 'Linear_OR.core/text-transform14#<-col-name:times_appeared', 169, 32).
+port(100, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform14#<-expression:value.toNumber()', 170, 30).
+port(101, 'in', 'table22', 'Linear_OR.core/text-transform14#<-table22', 171, 55).
+port(102, 'out', 'table23', 'Linear_OR.core/text-transform14#->table23', 172, 56).
+port(103, 'param', 'col-name:menus_appeared', 'Linear_OR.core/text-transform15#<-col-name:menus_appeared', 176, 29).
+port(104, 'param', 'expression:value.toNumber()', 'Linear_OR.core/text-transform15#<-expression:value.toNumber()', 177, 30).
+port(105, 'in', 'table23', 'Linear_OR.core/text-transform15#<-table23', 178, 56).
+port(106, 'out', 'table24', 'Linear_OR.core/text-transform15#->table24', 179, 57).
+port(107, 'param', 'col-name:first_appeared', 'Linear_OR.core/text-transform16#<-col-name:first_appeared', 183, 34).
+port(108, 'param', 'expression:grel:0', 'Linear_OR.core/text-transform16#<-expression:grel:0', 184, 58).
+port(109, 'in', 'table24', 'Linear_OR.core/text-transform16#<-table24', 185, 57).
+port(110, 'out', 'table25', 'Linear_OR.core/text-transform16#->table25', 186, 59).
+port(111, 'param', 'col-name:last_appeared', 'Linear_OR.core/text-transform17#<-col-name:last_appeared', 190, 36).
+port(112, 'param', 'expression:grel:0', 'Linear_OR.core/text-transform17#<-expression:grel:0', 191, 58).
+port(113, 'in', 'table25', 'Linear_OR.core/text-transform17#<-table25', 192, 59).
+port(114, 'out', 'table26', 'Linear_OR.core/text-transform17#->table26', 193, 60).
+port(115, 'param', 'col-name:name', 'Linear_OR.core/text-transform18#<-col-name:name', 197, 19).
+port(116, 'param', 'expression:grel:value.replace("\\"",_"")', 'Linear_OR.core/text-transform18#<-expression:grel:value.replace("\\"",_"")', 198, 61).
+port(117, 'in', 'table26', 'Linear_OR.core/text-transform18#<-table26', 199, 60).
+port(118, 'out', 'table27', 'Linear_OR.core/text-transform18#->table27', 200, 62).
+port(119, 'param', 'col-name:name', 'Linear_OR.core/text-transform19#<-col-name:name', 204, 19).
+port(120, 'param', 'expression:value.trim()', 'Linear_OR.core/text-transform19#<-expression:value.trim()', 205, 23).
+port(121, 'in', 'table27', 'Linear_OR.core/text-transform19#<-table27', 206, 62).
+port(122, 'out', 'table28', 'Linear_OR.core/text-transform19#->table28', 207, 63).
+port(123, 'param', 'col-name:name', 'Linear_OR.core/text-transform20#<-col-name:name', 211, 19).
+port(124, 'param', 'expression:value.replace(/\\s+/,'_')', 'Linear_OR.core/text-transform20#<-expression:value.replace(/\\s+/,'_')', 212, 25).
+port(125, 'in', 'table28', 'Linear_OR.core/text-transform20#<-table28', 213, 63).
+port(126, 'out', 'table29', 'Linear_OR.core/text-transform20#->table29', 214, 64).
+port(127, 'param', 'col-name:name', 'Linear_OR.core/text-transform21#<-col-name:name', 218, 19).
+port(128, 'param', 'expression:value.toTitlecase()', 'Linear_OR.core/text-transform21#<-expression:value.toTitlecase()', 219, 20).
+port(129, 'in', 'table29', 'Linear_OR.core/text-transform21#<-table29', 220, 64).
+port(130, 'out', 'table30', 'Linear_OR.core/text-transform21#->table30', 221, 65).
+
+% FACT: port_alias(port_id, alias).
+
+% FACT: port_uri_template(port_id, uri).
+
+% FACT: has_in_port(block_id, port_id).
+has_in_port(1, 1).
+has_in_port(1, 2).
+has_in_port(1, 3).
+has_in_port(1, 4).
+has_in_port(1, 5).
+has_in_port(1, 6).
+has_in_port(1, 7).
+has_in_port(1, 8).
+has_in_port(1, 9).
+has_in_port(1, 10).
+has_in_port(1, 11).
+has_in_port(1, 12).
+has_in_port(1, 13).
+has_in_port(1, 14).
+has_in_port(1, 15).
+has_in_port(1, 16).
+has_in_port(1, 17).
+has_in_port(2, 19).
+has_in_port(2, 20).
+has_in_port(2, 21).
+has_in_port(3, 23).
+has_in_port(3, 24).
+has_in_port(3, 25).
+has_in_port(4, 27).
+has_in_port(4, 28).
+has_in_port(4, 29).
+has_in_port(5, 31).
+has_in_port(5, 32).
+has_in_port(6, 34).
+has_in_port(6, 35).
+has_in_port(6, 36).
+has_in_port(7, 38).
+has_in_port(7, 39).
+has_in_port(7, 40).
+has_in_port(8, 42).
+has_in_port(8, 43).
+has_in_port(8, 44).
+has_in_port(9, 46).
+has_in_port(9, 47).
+has_in_port(9, 48).
+has_in_port(10, 50).
+has_in_port(10, 51).
+has_in_port(10, 52).
+has_in_port(11, 54).
+has_in_port(11, 55).
+has_in_port(11, 56).
+has_in_port(12, 58).
+has_in_port(12, 59).
+has_in_port(12, 60).
+has_in_port(13, 62).
+has_in_port(13, 63).
+has_in_port(14, 65).
+has_in_port(14, 66).
+has_in_port(15, 68).
+has_in_port(15, 69).
+has_in_port(16, 71).
+has_in_port(16, 72).
+has_in_port(17, 74).
+has_in_port(17, 75).
+has_in_port(17, 76).
+has_in_port(18, 78).
+has_in_port(18, 79).
+has_in_port(18, 80).
+has_in_port(19, 82).
+has_in_port(19, 83).
+has_in_port(20, 85).
+has_in_port(20, 86).
+has_in_port(21, 88).
+has_in_port(21, 89).
+has_in_port(22, 91).
+has_in_port(22, 92).
+has_in_port(22, 93).
+has_in_port(23, 95).
+has_in_port(23, 96).
+has_in_port(23, 97).
+has_in_port(24, 99).
+has_in_port(24, 100).
+has_in_port(24, 101).
+has_in_port(25, 103).
+has_in_port(25, 104).
+has_in_port(25, 105).
+has_in_port(26, 107).
+has_in_port(26, 108).
+has_in_port(26, 109).
+has_in_port(27, 111).
+has_in_port(27, 112).
+has_in_port(27, 113).
+has_in_port(28, 115).
+has_in_port(28, 116).
+has_in_port(28, 117).
+has_in_port(29, 119).
+has_in_port(29, 120).
+has_in_port(29, 121).
+has_in_port(30, 123).
+has_in_port(30, 124).
+has_in_port(30, 125).
+has_in_port(31, 127).
+has_in_port(31, 128).
+has_in_port(31, 129).
+
+% FACT: has_out_port(block_id, port_id).
+has_out_port(1, 18).
+has_out_port(2, 22).
+has_out_port(3, 26).
+has_out_port(4, 30).
+has_out_port(5, 33).
+has_out_port(6, 37).
+has_out_port(7, 41).
+has_out_port(8, 45).
+has_out_port(9, 49).
+has_out_port(10, 53).
+has_out_port(11, 57).
+has_out_port(12, 61).
+has_out_port(13, 64).
+has_out_port(14, 67).
+has_out_port(15, 70).
+has_out_port(16, 73).
+has_out_port(17, 77).
+has_out_port(18, 81).
+has_out_port(19, 84).
+has_out_port(20, 87).
+has_out_port(21, 90).
+has_out_port(22, 94).
+has_out_port(23, 98).
+has_out_port(24, 102).
+has_out_port(25, 106).
+has_out_port(26, 110).
+has_out_port(27, 114).
+has_out_port(28, 118).
+has_out_port(29, 122).
+has_out_port(30, 126).
+has_out_port(31, 130).
+
+% FACT: data(data_id, data_name, qualified_data_name).
+data(1, 'col-name:lowest_price', '[col-name:lowest_price]').
+data(2, 'col-name:menus_appeared', '[col-name:menus_appeared]').
+data(3, 'col-name:description', '[col-name:description]').
+data(4, 'expression:value.toTitlecase()', '[expression:value.toTitlecase()]').
+data(5, 'expression:value.replace(/\\s+/,'_')', '[expression:value.replace(/\\s+/,'_')]').
+data(6, 'col-name:times_appeared', '[col-name:times_appeared]').
+data(7, 'col-name:highest_price', '[col-name:highest_price]').
+data(8, 'expression:grel:cells['menus_appeared'].value', '[expression:grel:cells['menus_appeared'].value]').
+data(9, 'col-name:name', '[col-name:name]').
+data(10, 'col-name:first_appeared', '[col-name:first_appeared]').
+data(11, 'expression:value.unescape('html')', '[expression:value.unescape('html')]').
+data(12, 'col-name:last_appeared', '[col-name:last_appeared]').
+data(13, 'expression:value.trim()', '[expression:value.trim()]').
+data(14, 'expression:value.toNumber()', '[expression:value.toNumber()]').
+data(15, 'expression:grel:0', '[expression:grel:0]').
+data(16, 'expression:grel:value.replace("\\"",_"")', '[expression:grel:value.replace("\\"",_"")]').
+data(17, 'table0', '[table0]').
+data(18, 'table30', '[table30]').
+data(19, 'col-name:name', 'Linear_OR[col-name:name]').
+data(20, 'expression:value.toTitlecase()', 'Linear_OR[expression:value.toTitlecase()]').
+data(21, 'table0', 'Linear_OR[table0]').
+data(22, 'table1', 'Linear_OR[table1]').
+data(23, 'expression:value.trim()', 'Linear_OR[expression:value.trim()]').
+data(24, 'table2', 'Linear_OR[table2]').
+data(25, 'expression:value.replace(/\\s+/,'_')', 'Linear_OR[expression:value.replace(/\\s+/,'_')]').
+data(26, 'table3', 'Linear_OR[table3]').
+data(27, 'col-name:description', 'Linear_OR[col-name:description]').
+data(28, 'table4', 'Linear_OR[table4]').
+data(29, 'col-name:menus_appeared', 'Linear_OR[col-name:menus_appeared]').
+data(30, 'expression:value.toNumber()', 'Linear_OR[expression:value.toNumber()]').
+data(31, 'table5', 'Linear_OR[table5]').
+data(32, 'col-name:times_appeared', 'Linear_OR[col-name:times_appeared]').
+data(33, 'table6', 'Linear_OR[table6]').
+data(34, 'col-name:first_appeared', 'Linear_OR[col-name:first_appeared]').
+data(35, 'table7', 'Linear_OR[table7]').
+data(36, 'col-name:last_appeared', 'Linear_OR[col-name:last_appeared]').
+data(37, 'table8', 'Linear_OR[table8]').
+data(38, 'col-name:lowest_price', 'Linear_OR[col-name:lowest_price]').
+data(39, 'table9', 'Linear_OR[table9]').
+data(40, 'col-name:highest_price', 'Linear_OR[col-name:highest_price]').
+data(41, 'table10', 'Linear_OR[table10]').
+data(42, 'expression:value.unescape('html')', 'Linear_OR[expression:value.unescape('html')]').
+data(43, 'table11', 'Linear_OR[table11]').
+data(44, 'table12', 'Linear_OR[table12]').
+data(45, 'table13', 'Linear_OR[table13]').
+data(46, 'table14', 'Linear_OR[table14]').
+data(47, 'table15', 'Linear_OR[table15]').
+data(48, 'table16', 'Linear_OR[table16]').
+data(49, 'table17', 'Linear_OR[table17]').
+data(50, 'table18', 'Linear_OR[table18]').
+data(51, 'table19', 'Linear_OR[table19]').
+data(52, 'table20', 'Linear_OR[table20]').
+data(53, 'table21', 'Linear_OR[table21]').
+data(54, 'expression:grel:cells['menus_appeared'].value', 'Linear_OR[expression:grel:cells['menus_appeared'].value]').
+data(55, 'table22', 'Linear_OR[table22]').
+data(56, 'table23', 'Linear_OR[table23]').
+data(57, 'table24', 'Linear_OR[table24]').
+data(58, 'expression:grel:0', 'Linear_OR[expression:grel:0]').
+data(59, 'table25', 'Linear_OR[table25]').
+data(60, 'table26', 'Linear_OR[table26]').
+data(61, 'expression:grel:value.replace("\\"",_"")', 'Linear_OR[expression:grel:value.replace("\\"",_"")]').
+data(62, 'table27', 'Linear_OR[table27]').
+data(63, 'table28', 'Linear_OR[table28]').
+data(64, 'table29', 'Linear_OR[table29]').
+data(65, 'table30', 'Linear_OR[table30]').
+
+% FACT: channel(channel_id, data_id).
+channel(1, 18).
+channel(2, 19).
+channel(3, 19).
+channel(4, 19).
+channel(5, 19).
+channel(6, 19).
+channel(7, 19).
+channel(8, 19).
+channel(9, 19).
+channel(10, 20).
+channel(11, 20).
+channel(12, 21).
+channel(13, 23).
+channel(14, 23).
+channel(15, 22).
+channel(16, 25).
+channel(17, 25).
+channel(18, 24).
+channel(19, 27).
+channel(20, 26).
+channel(21, 29).
+channel(22, 29).
+channel(23, 30).
+channel(24, 30).
+channel(25, 30).
+channel(26, 30).
+channel(27, 30).
+channel(28, 30).
+channel(29, 30).
+channel(30, 30).
+channel(31, 30).
+channel(32, 30).
+channel(33, 30).
+channel(34, 28).
+channel(35, 32).
+channel(36, 32).
+channel(37, 32).
+channel(38, 32).
+channel(39, 32).
+channel(40, 32).
+channel(41, 32).
+channel(42, 31).
+channel(43, 34).
+channel(44, 34).
+channel(45, 34).
+channel(46, 34).
+channel(47, 34).
+channel(48, 33).
+channel(49, 36).
+channel(50, 36).
+channel(51, 36).
+channel(52, 36).
+channel(53, 36).
+channel(54, 35).
+channel(55, 38).
+channel(56, 37).
+channel(57, 40).
+channel(58, 39).
+channel(59, 42).
+channel(60, 41).
+channel(61, 43).
+channel(62, 44).
+channel(63, 45).
+channel(64, 46).
+channel(65, 47).
+channel(66, 48).
+channel(67, 49).
+channel(68, 50).
+channel(69, 51).
+channel(70, 52).
+channel(71, 54).
+channel(72, 53).
+channel(73, 55).
+channel(74, 56).
+channel(75, 58).
+channel(76, 58).
+channel(77, 57).
+channel(78, 59).
+channel(79, 61).
+channel(80, 60).
+channel(81, 62).
+channel(82, 63).
+channel(83, 64).
+channel(84, 1).
+channel(85, 2).
+channel(86, 2).
+channel(87, 3).
+channel(88, 4).
+channel(89, 4).
+channel(90, 5).
+channel(91, 5).
+channel(92, 6).
+channel(93, 6).
+channel(94, 6).
+channel(95, 6).
+channel(96, 6).
+channel(97, 6).
+channel(98, 6).
+channel(99, 7).
+channel(100, 8).
+channel(101, 9).
+channel(102, 9).
+channel(103, 9).
+channel(104, 9).
+channel(105, 9).
+channel(106, 9).
+channel(107, 9).
+channel(108, 9).
+channel(109, 10).
+channel(110, 10).
+channel(111, 10).
+channel(112, 10).
+channel(113, 10).
+channel(114, 11).
+channel(115, 12).
+channel(116, 12).
+channel(117, 12).
+channel(118, 12).
+channel(119, 12).
+channel(120, 13).
+channel(121, 13).
+channel(122, 14).
+channel(123, 14).
+channel(124, 14).
+channel(125, 14).
+channel(126, 14).
+channel(127, 14).
+channel(128, 14).
+channel(129, 14).
+channel(130, 14).
+channel(131, 14).
+channel(132, 14).
+channel(133, 15).
+channel(134, 15).
+channel(135, 16).
+channel(136, 17).
+channel(137, 65).
+
+% FACT: port_connects_to_channel(port_id, channel_id).
+port_connects_to_channel(130, 1).
+port_connects_to_channel(19, 2).
+port_connects_to_channel(23, 3).
+port_connects_to_channel(27, 4).
+port_connects_to_channel(58, 5).
+port_connects_to_channel(115, 6).
+port_connects_to_channel(119, 7).
+port_connects_to_channel(123, 8).
+port_connects_to_channel(127, 9).
+port_connects_to_channel(20, 10).
+port_connects_to_channel(128, 11).
+port_connects_to_channel(21, 12).
+port_connects_to_channel(24, 13).
+port_connects_to_channel(120, 14).
+port_connects_to_channel(22, 15).
+port_connects_to_channel(25, 15).
+port_connects_to_channel(28, 16).
+port_connects_to_channel(124, 17).
+port_connects_to_channel(26, 18).
+port_connects_to_channel(29, 18).
+port_connects_to_channel(31, 19).
+port_connects_to_channel(30, 20).
+port_connects_to_channel(32, 20).
+port_connects_to_channel(34, 21).
+port_connects_to_channel(103, 22).
+port_connects_to_channel(35, 23).
+port_connects_to_channel(39, 24).
+port_connects_to_channel(43, 25).
+port_connects_to_channel(47, 26).
+port_connects_to_channel(51, 27).
+port_connects_to_channel(55, 28).
+port_connects_to_channel(75, 29).
+port_connects_to_channel(79, 30).
+port_connects_to_channel(92, 31).
+port_connects_to_channel(100, 32).
+port_connects_to_channel(104, 33).
+port_connects_to_channel(33, 34).
+port_connects_to_channel(36, 34).
+port_connects_to_channel(38, 35).
+port_connects_to_channel(82, 36).
+port_connects_to_channel(85, 37).
+port_connects_to_channel(88, 38).
+port_connects_to_channel(91, 39).
+port_connects_to_channel(95, 40).
+port_connects_to_channel(99, 41).
+port_connects_to_channel(37, 42).
+port_connects_to_channel(40, 42).
+port_connects_to_channel(42, 43).
+port_connects_to_channel(62, 44).
+port_connects_to_channel(71, 45).
+port_connects_to_channel(74, 46).
+port_connects_to_channel(107, 47).
+port_connects_to_channel(41, 48).
+port_connects_to_channel(44, 48).
+port_connects_to_channel(46, 49).
+port_connects_to_channel(65, 50).
+port_connects_to_channel(68, 51).
+port_connects_to_channel(78, 52).
+port_connects_to_channel(111, 53).
+port_connects_to_channel(45, 54).
+port_connects_to_channel(48, 54).
+port_connects_to_channel(50, 55).
+port_connects_to_channel(49, 56).
+port_connects_to_channel(52, 56).
+port_connects_to_channel(54, 57).
+port_connects_to_channel(53, 58).
+port_connects_to_channel(56, 58).
+port_connects_to_channel(59, 59).
+port_connects_to_channel(57, 60).
+port_connects_to_channel(60, 60).
+port_connects_to_channel(61, 61).
+port_connects_to_channel(63, 61).
+port_connects_to_channel(64, 62).
+port_connects_to_channel(66, 62).
+port_connects_to_channel(67, 63).
+port_connects_to_channel(69, 63).
+port_connects_to_channel(70, 64).
+port_connects_to_channel(72, 64).
+port_connects_to_channel(73, 65).
+port_connects_to_channel(76, 65).
+port_connects_to_channel(77, 66).
+port_connects_to_channel(80, 66).
+port_connects_to_channel(81, 67).
+port_connects_to_channel(83, 67).
+port_connects_to_channel(84, 68).
+port_connects_to_channel(86, 68).
+port_connects_to_channel(87, 69).
+port_connects_to_channel(89, 69).
+port_connects_to_channel(90, 70).
+port_connects_to_channel(93, 70).
+port_connects_to_channel(96, 71).
+port_connects_to_channel(94, 72).
+port_connects_to_channel(97, 72).
+port_connects_to_channel(98, 73).
+port_connects_to_channel(101, 73).
+port_connects_to_channel(102, 74).
+port_connects_to_channel(105, 74).
+port_connects_to_channel(108, 75).
+port_connects_to_channel(112, 76).
+port_connects_to_channel(106, 77).
+port_connects_to_channel(109, 77).
+port_connects_to_channel(110, 78).
+port_connects_to_channel(113, 78).
+port_connects_to_channel(116, 79).
+port_connects_to_channel(114, 80).
+port_connects_to_channel(117, 80).
+port_connects_to_channel(118, 81).
+port_connects_to_channel(121, 81).
+port_connects_to_channel(122, 82).
+port_connects_to_channel(125, 82).
+port_connects_to_channel(126, 83).
+port_connects_to_channel(129, 83).
+port_connects_to_channel(50, 84).
+port_connects_to_channel(34, 85).
+port_connects_to_channel(103, 86).
+port_connects_to_channel(31, 87).
+port_connects_to_channel(20, 88).
+port_connects_to_channel(128, 89).
+port_connects_to_channel(28, 90).
+port_connects_to_channel(124, 91).
+port_connects_to_channel(38, 92).
+port_connects_to_channel(82, 93).
+port_connects_to_channel(85, 94).
+port_connects_to_channel(88, 95).
+port_connects_to_channel(91, 96).
+port_connects_to_channel(95, 97).
+port_connects_to_channel(99, 98).
+port_connects_to_channel(54, 99).
+port_connects_to_channel(96, 100).
+port_connects_to_channel(19, 101).
+port_connects_to_channel(23, 102).
+port_connects_to_channel(27, 103).
+port_connects_to_channel(58, 104).
+port_connects_to_channel(115, 105).
+port_connects_to_channel(119, 106).
+port_connects_to_channel(123, 107).
+port_connects_to_channel(127, 108).
+port_connects_to_channel(42, 109).
+port_connects_to_channel(62, 110).
+port_connects_to_channel(71, 111).
+port_connects_to_channel(74, 112).
+port_connects_to_channel(107, 113).
+port_connects_to_channel(59, 114).
+port_connects_to_channel(46, 115).
+port_connects_to_channel(65, 116).
+port_connects_to_channel(68, 117).
+port_connects_to_channel(78, 118).
+port_connects_to_channel(111, 119).
+port_connects_to_channel(24, 120).
+port_connects_to_channel(120, 121).
+port_connects_to_channel(35, 122).
+port_connects_to_channel(39, 123).
+port_connects_to_channel(43, 124).
+port_connects_to_channel(47, 125).
+port_connects_to_channel(51, 126).
+port_connects_to_channel(55, 127).
+port_connects_to_channel(75, 128).
+port_connects_to_channel(79, 129).
+port_connects_to_channel(92, 130).
+port_connects_to_channel(100, 131).
+port_connects_to_channel(104, 132).
+port_connects_to_channel(108, 133).
+port_connects_to_channel(112, 134).
+port_connects_to_channel(116, 135).
+port_connects_to_channel(21, 136).
+port_connects_to_channel(130, 137).
+
+% FACT: inflow_connects_to_channel(port_id, channel_id).
+inflow_connects_to_channel(9, 2).
+inflow_connects_to_channel(9, 3).
+inflow_connects_to_channel(9, 4).
+inflow_connects_to_channel(9, 5).
+inflow_connects_to_channel(9, 6).
+inflow_connects_to_channel(9, 7).
+inflow_connects_to_channel(9, 8).
+inflow_connects_to_channel(9, 9).
+inflow_connects_to_channel(4, 10).
+inflow_connects_to_channel(4, 11).
+inflow_connects_to_channel(17, 12).
+inflow_connects_to_channel(13, 13).
+inflow_connects_to_channel(13, 14).
+inflow_connects_to_channel(5, 16).
+inflow_connects_to_channel(5, 17).
+inflow_connects_to_channel(3, 19).
+inflow_connects_to_channel(2, 21).
+inflow_connects_to_channel(2, 22).
+inflow_connects_to_channel(14, 23).
+inflow_connects_to_channel(14, 24).
+inflow_connects_to_channel(14, 25).
+inflow_connects_to_channel(14, 26).
+inflow_connects_to_channel(14, 27).
+inflow_connects_to_channel(14, 28).
+inflow_connects_to_channel(14, 29).
+inflow_connects_to_channel(14, 30).
+inflow_connects_to_channel(14, 31).
+inflow_connects_to_channel(14, 32).
+inflow_connects_to_channel(14, 33).
+inflow_connects_to_channel(6, 35).
+inflow_connects_to_channel(6, 36).
+inflow_connects_to_channel(6, 37).
+inflow_connects_to_channel(6, 38).
+inflow_connects_to_channel(6, 39).
+inflow_connects_to_channel(6, 40).
+inflow_connects_to_channel(6, 41).
+inflow_connects_to_channel(10, 43).
+inflow_connects_to_channel(10, 44).
+inflow_connects_to_channel(10, 45).
+inflow_connects_to_channel(10, 46).
+inflow_connects_to_channel(10, 47).
+inflow_connects_to_channel(12, 49).
+inflow_connects_to_channel(12, 50).
+inflow_connects_to_channel(12, 51).
+inflow_connects_to_channel(12, 52).
+inflow_connects_to_channel(12, 53).
+inflow_connects_to_channel(1, 55).
+inflow_connects_to_channel(7, 57).
+inflow_connects_to_channel(11, 59).
+inflow_connects_to_channel(8, 71).
+inflow_connects_to_channel(15, 75).
+inflow_connects_to_channel(15, 76).
+inflow_connects_to_channel(16, 79).
+inflow_connects_to_channel(1, 84).
+inflow_connects_to_channel(2, 85).
+inflow_connects_to_channel(2, 86).
+inflow_connects_to_channel(3, 87).
+inflow_connects_to_channel(4, 88).
+inflow_connects_to_channel(4, 89).
+inflow_connects_to_channel(5, 90).
+inflow_connects_to_channel(5, 91).
+inflow_connects_to_channel(6, 92).
+inflow_connects_to_channel(6, 93).
+inflow_connects_to_channel(6, 94).
+inflow_connects_to_channel(6, 95).
+inflow_connects_to_channel(6, 96).
+inflow_connects_to_channel(6, 97).
+inflow_connects_to_channel(6, 98).
+inflow_connects_to_channel(7, 99).
+inflow_connects_to_channel(8, 100).
+inflow_connects_to_channel(9, 101).
+inflow_connects_to_channel(9, 102).
+inflow_connects_to_channel(9, 103).
+inflow_connects_to_channel(9, 104).
+inflow_connects_to_channel(9, 105).
+inflow_connects_to_channel(9, 106).
+inflow_connects_to_channel(9, 107).
+inflow_connects_to_channel(9, 108).
+inflow_connects_to_channel(10, 109).
+inflow_connects_to_channel(10, 110).
+inflow_connects_to_channel(10, 111).
+inflow_connects_to_channel(10, 112).
+inflow_connects_to_channel(10, 113).
+inflow_connects_to_channel(11, 114).
+inflow_connects_to_channel(12, 115).
+inflow_connects_to_channel(12, 116).
+inflow_connects_to_channel(12, 117).
+inflow_connects_to_channel(12, 118).
+inflow_connects_to_channel(12, 119).
+inflow_connects_to_channel(13, 120).
+inflow_connects_to_channel(13, 121).
+inflow_connects_to_channel(14, 122).
+inflow_connects_to_channel(14, 123).
+inflow_connects_to_channel(14, 124).
+inflow_connects_to_channel(14, 125).
+inflow_connects_to_channel(14, 126).
+inflow_connects_to_channel(14, 127).
+inflow_connects_to_channel(14, 128).
+inflow_connects_to_channel(14, 129).
+inflow_connects_to_channel(14, 130).
+inflow_connects_to_channel(14, 131).
+inflow_connects_to_channel(14, 132).
+inflow_connects_to_channel(15, 133).
+inflow_connects_to_channel(15, 134).
+inflow_connects_to_channel(16, 135).
+inflow_connects_to_channel(17, 136).
+
+% FACT: outflow_connects_to_channel(port_id, channel_id).
+outflow_connects_to_channel(18, 1).
+outflow_connects_to_channel(18, 137).
+
+% FACT: uri_variable(uri_variable_id, variable_name, port_id).

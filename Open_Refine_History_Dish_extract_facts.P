@@ -1,0 +1,261 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './Open_Refine_History_Dish.yw').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 1, 'begin', '@begin', 'Linear_OR').
+annotation(2, 1, 1, 'desc', '@desc', 'Linear OpenRefine Workflow').
+annotation(3, 1, 2, 'param', '@param', 'col-name:lowest_price').
+annotation(4, 1, 3, 'param', '@param', 'col-name:menus_appeared').
+annotation(5, 1, 4, 'param', '@param', 'col-name:description').
+annotation(6, 1, 5, 'param', '@param', 'expression:value.toTitlecase()').
+annotation(7, 1, 6, 'param', '@param', 'expression:value.replace(/\\s+/,'_')').
+annotation(8, 1, 7, 'param', '@param', 'col-name:times_appeared').
+annotation(9, 1, 8, 'param', '@param', 'col-name:highest_price').
+annotation(10, 1, 9, 'param', '@param', 'expression:grel:cells['menus_appeared'].value').
+annotation(11, 1, 10, 'param', '@param', 'col-name:name').
+annotation(12, 1, 11, 'param', '@param', 'col-name:first_appeared').
+annotation(13, 1, 12, 'param', '@param', 'expression:value.unescape('html')').
+annotation(14, 1, 13, 'param', '@param', 'col-name:last_appeared').
+annotation(15, 1, 14, 'param', '@param', 'expression:value.trim()').
+annotation(16, 1, 15, 'param', '@param', 'expression:value.toNumber()').
+annotation(17, 1, 16, 'param', '@param', 'expression:grel:0').
+annotation(18, 1, 17, 'param', '@param', 'expression:grel:value.replace("\\"",_"")').
+annotation(19, 1, 18, 'in', '@in', 'table0').
+annotation(20, 1, 19, 'out', '@out', 'table30').
+annotation(21, 1, 20, 'begin', '@begin', 'core/text-transform0#').
+annotation(22, 1, 20, 'desc', '@desc', 'Text transform on cells in column name using expression value.toTitlecase()').
+annotation(23, 1, 21, 'param', '@param', 'col-name:name').
+annotation(24, 1, 22, 'param', '@param', 'expression:value.toTitlecase()').
+annotation(25, 1, 23, 'in', '@in', 'table0').
+annotation(26, 1, 24, 'out', '@out', 'table1').
+annotation(27, 1, 25, 'end', '@end', 'core/text-transform0').
+annotation(28, 1, 26, 'begin', '@begin', 'core/text-transform1#').
+annotation(29, 1, 26, 'desc', '@desc', 'Text transform on cells in column name using expression value.trim()').
+annotation(30, 1, 27, 'param', '@param', 'col-name:name').
+annotation(31, 1, 28, 'param', '@param', 'expression:value.trim()').
+annotation(32, 1, 29, 'in', '@in', 'table1').
+annotation(33, 1, 30, 'out', '@out', 'table2').
+annotation(34, 1, 31, 'end', '@end', 'core/text-transform1').
+annotation(35, 1, 32, 'begin', '@begin', 'core/text-transform2#').
+annotation(36, 1, 32, 'desc', '@desc', 'Text transform on cells in column name using expression value.replace(/\\s+/,' ')').
+annotation(37, 1, 33, 'param', '@param', 'col-name:name').
+annotation(38, 1, 34, 'param', '@param', 'expression:value.replace(/\\s+/,'_')').
+annotation(39, 1, 35, 'in', '@in', 'table2').
+annotation(40, 1, 36, 'out', '@out', 'table3').
+annotation(41, 1, 37, 'end', '@end', 'core/text-transform2').
+annotation(42, 1, 38, 'begin', '@begin', 'core/column-removal0#').
+annotation(43, 1, 38, 'desc', '@desc', 'Remove column description').
+annotation(44, 1, 39, 'param', '@param', 'col-name:description').
+annotation(45, 1, 40, 'in', '@in', 'table3').
+annotation(46, 1, 41, 'out', '@out', 'table4').
+annotation(47, 1, 42, 'end', '@end', 'core/column-removal0').
+annotation(48, 1, 43, 'begin', '@begin', 'core/text-transform3#').
+annotation(49, 1, 43, 'desc', '@desc', 'Text transform on cells in column menus_appeared using expression value.toNumber()').
+annotation(50, 1, 44, 'param', '@param', 'col-name:menus_appeared').
+annotation(51, 1, 45, 'param', '@param', 'expression:value.toNumber()').
+annotation(52, 1, 46, 'in', '@in', 'table4').
+annotation(53, 1, 47, 'out', '@out', 'table5').
+annotation(54, 1, 48, 'end', '@end', 'core/text-transform3').
+annotation(55, 1, 49, 'begin', '@begin', 'core/text-transform4#').
+annotation(56, 1, 49, 'desc', '@desc', 'Text transform on cells in column times_appeared using expression value.toNumber()').
+annotation(57, 1, 50, 'param', '@param', 'col-name:times_appeared').
+annotation(58, 1, 51, 'param', '@param', 'expression:value.toNumber()').
+annotation(59, 1, 52, 'in', '@in', 'table5').
+annotation(60, 1, 53, 'out', '@out', 'table6').
+annotation(61, 1, 54, 'end', '@end', 'core/text-transform4').
+annotation(62, 1, 55, 'begin', '@begin', 'core/text-transform5#').
+annotation(63, 1, 55, 'desc', '@desc', 'Text transform on cells in column first_appeared using expression value.toNumber()').
+annotation(64, 1, 56, 'param', '@param', 'col-name:first_appeared').
+annotation(65, 1, 57, 'param', '@param', 'expression:value.toNumber()').
+annotation(66, 1, 58, 'in', '@in', 'table6').
+annotation(67, 1, 59, 'out', '@out', 'table7').
+annotation(68, 1, 60, 'end', '@end', 'core/text-transform5').
+annotation(69, 1, 61, 'begin', '@begin', 'core/text-transform6#').
+annotation(70, 1, 61, 'desc', '@desc', 'Text transform on cells in column last_appeared using expression value.toNumber()').
+annotation(71, 1, 62, 'param', '@param', 'col-name:last_appeared').
+annotation(72, 1, 63, 'param', '@param', 'expression:value.toNumber()').
+annotation(73, 1, 64, 'in', '@in', 'table7').
+annotation(74, 1, 65, 'out', '@out', 'table8').
+annotation(75, 1, 66, 'end', '@end', 'core/text-transform6').
+annotation(76, 1, 67, 'begin', '@begin', 'core/text-transform7#').
+annotation(77, 1, 67, 'desc', '@desc', 'Text transform on cells in column lowest_price using expression value.toNumber()').
+annotation(78, 1, 68, 'param', '@param', 'col-name:lowest_price').
+annotation(79, 1, 69, 'param', '@param', 'expression:value.toNumber()').
+annotation(80, 1, 70, 'in', '@in', 'table8').
+annotation(81, 1, 71, 'out', '@out', 'table9').
+annotation(82, 1, 72, 'end', '@end', 'core/text-transform7').
+annotation(83, 1, 73, 'begin', '@begin', 'core/text-transform8#').
+annotation(84, 1, 73, 'desc', '@desc', 'Text transform on cells in column highest_price using expression value.toNumber()').
+annotation(85, 1, 74, 'param', '@param', 'col-name:highest_price').
+annotation(86, 1, 75, 'param', '@param', 'expression:value.toNumber()').
+annotation(87, 1, 76, 'in', '@in', 'table9').
+annotation(88, 1, 77, 'out', '@out', 'table10').
+annotation(89, 1, 78, 'end', '@end', 'core/text-transform8').
+annotation(90, 1, 79, 'begin', '@begin', 'core/text-transform9#').
+annotation(91, 1, 79, 'desc', '@desc', 'Text transform on cells in column name using expression value.unescape('html')').
+annotation(92, 1, 80, 'param', '@param', 'col-name:name').
+annotation(93, 1, 81, 'param', '@param', 'expression:value.unescape('html')').
+annotation(94, 1, 82, 'in', '@in', 'table10').
+annotation(95, 1, 83, 'out', '@out', 'table11').
+annotation(96, 1, 84, 'end', '@end', 'core/text-transform9').
+annotation(97, 1, 85, 'begin', '@begin', 'core/mass-edit0#').
+annotation(98, 1, 85, 'desc', '@desc', 'Mass edit cells in column first_appeared').
+annotation(99, 1, 86, 'param', '@param', 'col-name:first_appeared').
+annotation(100, 1, 87, 'in', '@in', 'table11').
+annotation(101, 1, 88, 'out', '@out', 'table12').
+annotation(102, 1, 89, 'end', '@end', 'core/mass-edit0').
+annotation(103, 1, 90, 'begin', '@begin', 'core/mass-edit1#').
+annotation(104, 1, 90, 'desc', '@desc', 'Mass edit cells in column last_appeared').
+annotation(105, 1, 91, 'param', '@param', 'col-name:last_appeared').
+annotation(106, 1, 92, 'in', '@in', 'table12').
+annotation(107, 1, 93, 'out', '@out', 'table13').
+annotation(108, 1, 94, 'end', '@end', 'core/mass-edit1').
+annotation(109, 1, 95, 'begin', '@begin', 'core/mass-edit2#').
+annotation(110, 1, 95, 'desc', '@desc', 'Mass edit cells in column last_appeared').
+annotation(111, 1, 96, 'param', '@param', 'col-name:last_appeared').
+annotation(112, 1, 97, 'in', '@in', 'table13').
+annotation(113, 1, 98, 'out', '@out', 'table14').
+annotation(114, 1, 99, 'end', '@end', 'core/mass-edit2').
+annotation(115, 1, 100, 'begin', '@begin', 'core/mass-edit3#').
+annotation(116, 1, 100, 'desc', '@desc', 'Mass edit cells in column first_appeared').
+annotation(117, 1, 101, 'param', '@param', 'col-name:first_appeared').
+annotation(118, 1, 102, 'in', '@in', 'table14').
+annotation(119, 1, 103, 'out', '@out', 'table15').
+annotation(120, 1, 104, 'end', '@end', 'core/mass-edit3').
+annotation(121, 1, 105, 'begin', '@begin', 'core/text-transform10#').
+annotation(122, 1, 105, 'desc', '@desc', 'Text transform on cells in column first_appeared using expression value.toNumber()').
+annotation(123, 1, 106, 'param', '@param', 'col-name:first_appeared').
+annotation(124, 1, 107, 'param', '@param', 'expression:value.toNumber()').
+annotation(125, 1, 108, 'in', '@in', 'table15').
+annotation(126, 1, 109, 'out', '@out', 'table16').
+annotation(127, 1, 110, 'end', '@end', 'core/text-transform10').
+annotation(128, 1, 111, 'begin', '@begin', 'core/text-transform11#').
+annotation(129, 1, 111, 'desc', '@desc', 'Text transform on cells in column last_appeared using expression value.toNumber()').
+annotation(130, 1, 112, 'param', '@param', 'col-name:last_appeared').
+annotation(131, 1, 113, 'param', '@param', 'expression:value.toNumber()').
+annotation(132, 1, 114, 'in', '@in', 'table16').
+annotation(133, 1, 115, 'out', '@out', 'table17').
+annotation(134, 1, 116, 'end', '@end', 'core/text-transform11').
+annotation(135, 1, 117, 'begin', '@begin', 'core/mass-edit4#').
+annotation(136, 1, 117, 'desc', '@desc', 'Mass edit cells in column times_appeared').
+annotation(137, 1, 118, 'param', '@param', 'col-name:times_appeared').
+annotation(138, 1, 119, 'in', '@in', 'table17').
+annotation(139, 1, 120, 'out', '@out', 'table18').
+annotation(140, 1, 121, 'end', '@end', 'core/mass-edit4').
+annotation(141, 1, 122, 'begin', '@begin', 'core/mass-edit5#').
+annotation(142, 1, 122, 'desc', '@desc', 'Mass edit cells in column times_appeared').
+annotation(143, 1, 123, 'param', '@param', 'col-name:times_appeared').
+annotation(144, 1, 124, 'in', '@in', 'table18').
+annotation(145, 1, 125, 'out', '@out', 'table19').
+annotation(146, 1, 126, 'end', '@end', 'core/mass-edit5').
+annotation(147, 1, 127, 'begin', '@begin', 'core/mass-edit6#').
+annotation(148, 1, 127, 'desc', '@desc', 'Mass edit cells in column times_appeared').
+annotation(149, 1, 128, 'param', '@param', 'col-name:times_appeared').
+annotation(150, 1, 129, 'in', '@in', 'table19').
+annotation(151, 1, 130, 'out', '@out', 'table20').
+annotation(152, 1, 131, 'end', '@end', 'core/mass-edit6').
+annotation(153, 1, 132, 'begin', '@begin', 'core/text-transform12#').
+annotation(154, 1, 132, 'desc', '@desc', 'Text transform on cells in column times_appeared using expression value.toNumber()').
+annotation(155, 1, 133, 'param', '@param', 'col-name:times_appeared').
+annotation(156, 1, 134, 'param', '@param', 'expression:value.toNumber()').
+annotation(157, 1, 135, 'in', '@in', 'table20').
+annotation(158, 1, 136, 'out', '@out', 'table21').
+annotation(159, 1, 137, 'end', '@end', 'core/text-transform12').
+annotation(160, 1, 138, 'begin', '@begin', 'core/text-transform13#').
+annotation(161, 1, 138, 'desc', '@desc', 'Text transform on cells in column times_appeared using expression grel:cells['menus_appeared'].value').
+annotation(162, 1, 139, 'param', '@param', 'col-name:times_appeared').
+annotation(163, 1, 140, 'param', '@param', 'expression:grel:cells['menus_appeared'].value').
+annotation(164, 1, 141, 'in', '@in', 'table21').
+annotation(165, 1, 142, 'out', '@out', 'table22').
+annotation(166, 1, 143, 'end', '@end', 'core/text-transform13').
+annotation(167, 1, 144, 'begin', '@begin', 'core/text-transform14#').
+annotation(168, 1, 144, 'desc', '@desc', 'Text transform on cells in column times_appeared using expression value.toNumber()').
+annotation(169, 1, 145, 'param', '@param', 'col-name:times_appeared').
+annotation(170, 1, 146, 'param', '@param', 'expression:value.toNumber()').
+annotation(171, 1, 147, 'in', '@in', 'table22').
+annotation(172, 1, 148, 'out', '@out', 'table23').
+annotation(173, 1, 149, 'end', '@end', 'core/text-transform14').
+annotation(174, 1, 150, 'begin', '@begin', 'core/text-transform15#').
+annotation(175, 1, 150, 'desc', '@desc', 'Text transform on cells in column menus_appeared using expression value.toNumber()').
+annotation(176, 1, 151, 'param', '@param', 'col-name:menus_appeared').
+annotation(177, 1, 152, 'param', '@param', 'expression:value.toNumber()').
+annotation(178, 1, 153, 'in', '@in', 'table23').
+annotation(179, 1, 154, 'out', '@out', 'table24').
+annotation(180, 1, 155, 'end', '@end', 'core/text-transform15').
+annotation(181, 1, 156, 'begin', '@begin', 'core/text-transform16#').
+annotation(182, 1, 156, 'desc', '@desc', 'Text transform on cells in column first_appeared using expression grel:0').
+annotation(183, 1, 157, 'param', '@param', 'col-name:first_appeared').
+annotation(184, 1, 158, 'param', '@param', 'expression:grel:0').
+annotation(185, 1, 159, 'in', '@in', 'table24').
+annotation(186, 1, 160, 'out', '@out', 'table25').
+annotation(187, 1, 161, 'end', '@end', 'core/text-transform16').
+annotation(188, 1, 162, 'begin', '@begin', 'core/text-transform17#').
+annotation(189, 1, 162, 'desc', '@desc', 'Text transform on cells in column last_appeared using expression grel:0').
+annotation(190, 1, 163, 'param', '@param', 'col-name:last_appeared').
+annotation(191, 1, 164, 'param', '@param', 'expression:grel:0').
+annotation(192, 1, 165, 'in', '@in', 'table25').
+annotation(193, 1, 166, 'out', '@out', 'table26').
+annotation(194, 1, 167, 'end', '@end', 'core/text-transform17').
+annotation(195, 1, 168, 'begin', '@begin', 'core/text-transform18#').
+annotation(196, 1, 168, 'desc', '@desc', 'Text transform on cells in column name using expression grel:value.replace(\"\\\"\", \"\")').
+annotation(197, 1, 169, 'param', '@param', 'col-name:name').
+annotation(198, 1, 170, 'param', '@param', 'expression:grel:value.replace("\\"",_"")').
+annotation(199, 1, 171, 'in', '@in', 'table26').
+annotation(200, 1, 172, 'out', '@out', 'table27').
+annotation(201, 1, 173, 'end', '@end', 'core/text-transform18').
+annotation(202, 1, 174, 'begin', '@begin', 'core/text-transform19#').
+annotation(203, 1, 174, 'desc', '@desc', 'Text transform on cells in column name using expression value.trim()').
+annotation(204, 1, 175, 'param', '@param', 'col-name:name').
+annotation(205, 1, 176, 'param', '@param', 'expression:value.trim()').
+annotation(206, 1, 177, 'in', '@in', 'table27').
+annotation(207, 1, 178, 'out', '@out', 'table28').
+annotation(208, 1, 179, 'end', '@end', 'core/text-transform19').
+annotation(209, 1, 180, 'begin', '@begin', 'core/text-transform20#').
+annotation(210, 1, 180, 'desc', '@desc', 'Text transform on cells in column name using expression value.replace(/\\s+/,' ')').
+annotation(211, 1, 181, 'param', '@param', 'col-name:name').
+annotation(212, 1, 182, 'param', '@param', 'expression:value.replace(/\\s+/,'_')').
+annotation(213, 1, 183, 'in', '@in', 'table28').
+annotation(214, 1, 184, 'out', '@out', 'table29').
+annotation(215, 1, 185, 'end', '@end', 'core/text-transform20').
+annotation(216, 1, 186, 'begin', '@begin', 'core/text-transform21#').
+annotation(217, 1, 186, 'desc', '@desc', 'Text transform on cells in column name using expression value.toTitlecase()').
+annotation(218, 1, 187, 'param', '@param', 'col-name:name').
+annotation(219, 1, 188, 'param', '@param', 'expression:value.toTitlecase()').
+annotation(220, 1, 189, 'in', '@in', 'table29').
+annotation(221, 1, 190, 'out', '@out', 'table30').
+annotation(222, 1, 191, 'end', '@end', 'core/text-transform21').
+annotation(223, 1, 192, 'end', '@end', 'Linear_OR').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(2, 1).
+annotation_qualifies(22, 21).
+annotation_qualifies(29, 28).
+annotation_qualifies(36, 35).
+annotation_qualifies(43, 42).
+annotation_qualifies(49, 48).
+annotation_qualifies(56, 55).
+annotation_qualifies(63, 62).
+annotation_qualifies(70, 69).
+annotation_qualifies(77, 76).
+annotation_qualifies(84, 83).
+annotation_qualifies(91, 90).
+annotation_qualifies(98, 97).
+annotation_qualifies(104, 103).
+annotation_qualifies(110, 109).
+annotation_qualifies(116, 115).
+annotation_qualifies(122, 121).
+annotation_qualifies(129, 128).
+annotation_qualifies(136, 135).
+annotation_qualifies(142, 141).
+annotation_qualifies(148, 147).
+annotation_qualifies(154, 153).
+annotation_qualifies(161, 160).
+annotation_qualifies(168, 167).
+annotation_qualifies(175, 174).
+annotation_qualifies(182, 181).
+annotation_qualifies(189, 188).
+annotation_qualifies(196, 195).
+annotation_qualifies(203, 202).
+annotation_qualifies(210, 209).
+annotation_qualifies(217, 216).
