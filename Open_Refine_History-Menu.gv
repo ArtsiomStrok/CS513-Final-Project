@@ -1,0 +1,433 @@
+
+/* Start of top-level graph */
+digraph Workflow {
+rankdir=TB
+
+/* Title for graph */
+fontname=Helvetica; fontsize=18; labelloc=t
+label=Parallel_OR
+
+/* Start of double cluster for drawing box around nodes in workflow */
+subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
+subgraph cluster_workflow_box_inner { label=""; penwidth=0
+
+/* Style for nodes representing atomic programs in workflow */
+node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing atomic programs in workflow */
+"core/text-transform0" [shape=record rankdir=LR label="{<f0> core/text-transform0 |<f1> Text transform on cells in column id using expression value.toNumber()}"];
+"group_1_core/mass-edit1" [shape=record rankdir=LR label="{<f0> group_1_core/mass-edit1 |<f1> group of core/mass-edit with 3 operations, details in sub_ops_1.json}"];
+"group_2_core/text-transform2" [shape=record rankdir=LR label="{<f0> group_2_core/text-transform2 |<f1> group of core/text-transform with 9 operations, details in sub_ops_2.json}"];
+"group_3_core/mass-edit3" [shape=record rankdir=LR label="{<f0> group_3_core/mass-edit3 |<f1> group of core/mass-edit with 4 operations, details in sub_ops_3.json}"];
+"group_4_core/text-transform4" [shape=record rankdir=LR label="{<f0> group_4_core/text-transform4 |<f1> group of core/text-transform with 4 operations, details in sub_ops_4.json}"];
+"group_5_core/mass-edit5" [shape=record rankdir=LR label="{<f0> group_5_core/mass-edit5 |<f1> group of core/mass-edit with 4 operations, details in sub_ops_5.json}"];
+"group_6_core/text-transform6" [shape=record rankdir=LR label="{<f0> group_6_core/text-transform6 |<f1> group of core/text-transform with 8 operations, details in sub_ops_6.json}"];
+"core/mass-edit7" [shape=record rankdir=LR label="{<f0> core/mass-edit7 |<f1> Mass edit cells in column sponsor}"];
+"core/text-transform8" [shape=record rankdir=LR label="{<f0> core/text-transform8 |<f1> Text transform on cells in column sponsor using expression grel\:value.replace(\".\", \"\")}"];
+"group_7_core/mass-edit9" [shape=record rankdir=LR label="{<f0> group_7_core/mass-edit9 |<f1> group of core/mass-edit with 6 operations, details in sub_ops_7.json}"];
+"group_8_core/text-transform10" [shape=record rankdir=LR label="{<f0> group_8_core/text-transform10 |<f1> group of core/text-transform with 9 operations, details in sub_ops_8.json}"];
+"group_9_core/mass-edit11" [shape=record rankdir=LR label="{<f0> group_9_core/mass-edit11 |<f1> group of core/mass-edit with 3 operations, details in sub_ops_9.json}"];
+"group_10_core/text-transform12" [shape=record rankdir=LR label="{<f0> group_10_core/text-transform12 |<f1> group of core/text-transform with 4 operations, details in sub_ops_10.json}"];
+"group_11_core/mass-edit13" [shape=record rankdir=LR label="{<f0> group_11_core/mass-edit13 |<f1> group of core/mass-edit with 7 operations, details in sub_ops_11.json}"];
+"group_12_core/text-transform14" [shape=record rankdir=LR label="{<f0> group_12_core/text-transform14 |<f1> group of core/text-transform with 3 operations, details in sub_ops_12.json}"];
+"core/mass-edit15" [shape=record rankdir=LR label="{<f0> core/mass-edit15 |<f1> Mass edit cells in column event}"];
+"group_13_core/text-transform16" [shape=record rankdir=LR label="{<f0> group_13_core/text-transform16 |<f1> group of core/text-transform with 7 operations, details in sub_ops_13.json}"];
+"group_14_core/mass-edit17" [shape=record rankdir=LR label="{<f0> group_14_core/mass-edit17 |<f1> group of core/mass-edit with 5 operations, details in sub_ops_14.json}"];
+"core/text-transform18" [shape=record rankdir=LR label="{<f0> core/text-transform18 |<f1> Text transform on cells in column venue using expression grel\:value.replace(\"NULL\", \"\")}"];
+"group_15_core/mass-edit19" [shape=record rankdir=LR label="{<f0> group_15_core/mass-edit19 |<f1> group of core/mass-edit with 8 operations, details in sub_ops_15.json}"];
+"group_16_core/mass-edit20" [shape=record rankdir=LR label="{<f0> group_16_core/mass-edit20 |<f1> group of core/mass-edit with 2 operations, details in sub_ops_16.json}"];
+"group_17_core/text-transform21" [shape=record rankdir=LR label="{<f0> group_17_core/text-transform21 |<f1> group of core/text-transform with 8 operations, details in sub_ops_17.json}"];
+"group_18_core/mass-edit22" [shape=record rankdir=LR label="{<f0> group_18_core/mass-edit22 |<f1> group of core/mass-edit with 7 operations, details in sub_ops_18.json}"];
+"group_19_core/text-transform23" [shape=record rankdir=LR label="{<f0> group_19_core/text-transform23 |<f1> group of core/text-transform with 26 operations, details in sub_ops_19.json}"];
+"core/column-removal24" [shape=record rankdir=LR label="{<f0> core/column-removal24 |<f1> Remove column keywords}"];
+"core/column-removal25" [shape=record rankdir=LR label="{<f0> core/column-removal25 |<f1> Remove column language}"];
+"group_20_core/text-transform26" [shape=record rankdir=LR label="{<f0> group_20_core/text-transform26 |<f1> group of core/text-transform with 2 operations, details in sub_ops_20.json}"];
+"group_21_core/text-transform27" [shape=record rankdir=LR label="{<f0> group_21_core/text-transform27 |<f1> group of core/text-transform with 12 operations, details in sub_ops_21.json}"];
+"group_22_core/mass-edit28" [shape=record rankdir=LR label="{<f0> group_22_core/mass-edit28 |<f1> group of core/mass-edit with 4 operations, details in sub_ops_22.json}"];
+"core/text-transform29" [shape=record rankdir=LR label="{<f0> core/text-transform29 |<f1> Text transform on cells in column place using expression grel\:value.replace(\"È\", \"E\")}"];
+"group_23_core/mass-edit30" [shape=record rankdir=LR label="{<f0> group_23_core/mass-edit30 |<f1> group of core/mass-edit with 5 operations, details in sub_ops_23.json}"];
+"group_24_core/text-transform31" [shape=record rankdir=LR label="{<f0> group_24_core/text-transform31 |<f1> group of core/text-transform with 2 operations, details in sub_ops_24.json}"];
+"group_25_core/mass-edit32" [shape=record rankdir=LR label="{<f0> group_25_core/mass-edit32 |<f1> group of core/mass-edit with 2 operations, details in sub_ops_25.json}"];
+"group_26_core/text-transform33" [shape=record rankdir=LR label="{<f0> group_26_core/text-transform33 |<f1> group of core/text-transform with 11 operations, details in sub_ops_26.json}"];
+"group_27_core/mass-edit34" [shape=record rankdir=LR label="{<f0> group_27_core/mass-edit34 |<f1> group of core/mass-edit with 7 operations, details in sub_ops_27.json}"];
+"core/text-transform35" [shape=record rankdir=LR label="{<f0> core/text-transform35 |<f1> Text transform on cells in column page_count using expression value.toNumber()}"];
+"core/text-transform36" [shape=record rankdir=LR label="{<f0> core/text-transform36 |<f1> Text transform on cells in column dish_count using expression value.toNumber()}"];
+"group_28_core/text-transform37" [shape=record rankdir=LR label="{<f0> group_28_core/text-transform37 |<f1> group of core/text-transform with 6 operations, details in sub_ops_28.json}"];
+"group_29_core/text-transform38" [shape=record rankdir=LR label="{<f0> group_29_core/text-transform38 |<f1> group of core/text-transform with 10 operations, details in sub_ops_29.json}"];
+"group_30_core/mass-edit39" [shape=record rankdir=LR label="{<f0> group_30_core/mass-edit39 |<f1> group of core/mass-edit with 5 operations, details in sub_ops_30.json}"];
+"group_31_core/text-transform40" [shape=record rankdir=LR label="{<f0> group_31_core/text-transform40 |<f1> group of core/text-transform with 5 operations, details in sub_ops_31.json}"];
+"core/mass-edit41" [shape=record rankdir=LR label="{<f0> core/mass-edit41 |<f1> Mass edit cells in column physical_description}"];
+"group_32_core/text-transform42" [shape=record rankdir=LR label="{<f0> group_32_core/text-transform42 |<f1> group of core/text-transform with 6 operations, details in sub_ops_32.json}"];
+"group_33_core/mass-edit43" [shape=record rankdir=LR label="{<f0> group_33_core/mass-edit43 |<f1> group of core/mass-edit with 3 operations, details in sub_ops_33.json}"];
+"group_34_core/text-transform44" [shape=record rankdir=LR label="{<f0> group_34_core/text-transform44 |<f1> group of core/text-transform with 3 operations, details in sub_ops_34.json}"];
+"group_35_core/mass-edit45" [shape=record rankdir=LR label="{<f0> group_35_core/mass-edit45 |<f1> group of core/mass-edit with 5 operations, details in sub_ops_35.json}"];
+"group_36_core/text-transform46" [shape=record rankdir=LR label="{<f0> group_36_core/text-transform46 |<f1> group of core/text-transform with 3 operations, details in sub_ops_36.json}"];
+"group_37_core/mass-edit47" [shape=record rankdir=LR label="{<f0> group_37_core/mass-edit47 |<f1> group of core/mass-edit with 13 operations, details in sub_ops_37.json}"];
+"group_38_core/text-transform48" [shape=record rankdir=LR label="{<f0> group_38_core/text-transform48 |<f1> group of core/text-transform with 3 operations, details in sub_ops_38.json}"];
+"group_39_core/mass-edit49" [shape=record rankdir=LR label="{<f0> group_39_core/mass-edit49 |<f1> group of core/mass-edit with 9 operations, details in sub_ops_39.json}"];
+"group_40_core/text-transform50" [shape=record rankdir=LR label="{<f0> group_40_core/text-transform50 |<f1> group of core/text-transform with 4 operations, details in sub_ops_40.json}"];
+"group_41_core/mass-edit51" [shape=record rankdir=LR label="{<f0> group_41_core/mass-edit51 |<f1> group of core/mass-edit with 6 operations, details in sub_ops_41.json}"];
+"group_42_core/text-transform52" [shape=record rankdir=LR label="{<f0> group_42_core/text-transform52 |<f1> group of core/text-transform with 3 operations, details in sub_ops_42.json}"];
+"core/mass-edit53" [shape=record rankdir=LR label="{<f0> core/mass-edit53 |<f1> Mass edit cells in column physical_description}"];
+"group_43_core/text-transform54" [shape=record rankdir=LR label="{<f0> group_43_core/text-transform54 |<f1> group of core/text-transform with 5 operations, details in sub_ops_43.json}"];
+"group_44_core/mass-edit55" [shape=record rankdir=LR label="{<f0> group_44_core/mass-edit55 |<f1> group of core/mass-edit with 27 operations, details in sub_ops_44.json}"];
+"group_45_core/text-transform56" [shape=record rankdir=LR label="{<f0> group_45_core/text-transform56 |<f1> group of core/text-transform with 3 operations, details in sub_ops_45.json}"];
+"group_46_core/mass-edit57" [shape=record rankdir=LR label="{<f0> group_46_core/mass-edit57 |<f1> group of core/mass-edit with 6 operations, details in sub_ops_46.json}"];
+"core/text-transform58" [shape=record rankdir=LR label="{<f0> core/text-transform58 |<f1> Text transform on cells in column physical_description using expression grel\:value.replace(/\\b(AND|S)\\b/, \"\")}"];
+"group_47_core/text-transform59" [shape=record rankdir=LR label="{<f0> group_47_core/text-transform59 |<f1> group of core/text-transform with 4 operations, details in sub_ops_47.json}"];
+"core/text-transform60" [shape=record rankdir=LR label="{<f0> core/text-transform60 |<f1> Text transform on cells in column physical_description_type using expression grel\:if(isBlank(value), \"FOLDER\", \"\")}"];
+CombineDataCleaningChanges
+
+/* Style for nodes representing non-parameter data channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes for non-parameter data channels in workflow */
+CleanData
+id
+name
+name_1
+name_2
+name_3
+name_4
+sponsor
+sponsor_1
+sponsor_2
+sponsor_3
+sponsor_4
+sponsor_5
+event
+event_1
+event_2
+event_3
+venue
+venue_1
+venue_2
+venue_3
+occasion
+occasion_1
+occasion_2
+call_number
+keywords
+language
+date
+place
+place_1
+place_2
+place_3
+location
+location_1
+location_2
+location_3
+page_count
+dish_count
+notes
+physical_description
+physical_description_1
+physical_description_2
+physical_description_3
+physical_description_4
+physical_description_5
+physical_description_6
+physical_description_7
+physical_description_8
+physical_description_9
+physical_description_10
+physical_description_11
+physical_description_12
+physical_description_13
+physical_description_14
+physical_description_15
+physical_description_16
+physical_description_17
+physical_description_18
+physical_description_19
+physical_description_20
+physical_size
+physical_description_type
+id_1
+name_5
+sponsor_6
+event_4
+venue_4
+occasion_3
+call_number_1
+"remove-keywords"
+"remove-language"
+date_1
+place_4
+location_4
+page_count_1
+dish_count_1
+notes_1
+physical_description_21
+physical_size_1
+physical_description_type_1
+
+/* Style for nodes representing parameter channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing parameter channels in workflow */
+"expression:value.toNumber()"
+"expression:sub_ops_1"
+"expression:sub_ops_2"
+"expression:sub_ops_3"
+"expression:sub_ops_4"
+"expression:sub_ops_5"
+"expression:sub_ops_6"
+"expression:value"
+"expression:grel:value.replace(\".\",_\"\")"
+"expression:sub_ops_7"
+"expression:sub_ops_8"
+"expression:sub_ops_9"
+"expression:sub_ops_10"
+"expression:sub_ops_11"
+"expression:sub_ops_12"
+"expression:sub_ops_13"
+"expression:sub_ops_14"
+"expression:grel:value.replace(\"NULL\",_\"\")"
+"expression:sub_ops_15"
+"expression:sub_ops_16"
+"expression:sub_ops_17"
+"expression:sub_ops_18"
+"expression:sub_ops_19"
+"expression:sub_ops_20"
+"expression:sub_ops_21"
+"expression:sub_ops_22"
+"expression:grel:value.replace(\"È\",_\"E\")"
+"expression:sub_ops_23"
+"expression:sub_ops_24"
+"expression:sub_ops_25"
+"expression:sub_ops_26"
+"expression:sub_ops_27"
+"expression:sub_ops_28"
+"expression:sub_ops_29"
+"expression:sub_ops_30"
+"expression:sub_ops_31"
+"expression:sub_ops_32"
+"expression:sub_ops_33"
+"expression:sub_ops_34"
+"expression:sub_ops_35"
+"expression:sub_ops_36"
+"expression:sub_ops_37"
+"expression:sub_ops_38"
+"expression:sub_ops_39"
+"expression:sub_ops_40"
+"expression:sub_ops_41"
+"expression:sub_ops_42"
+"expression:sub_ops_43"
+"expression:sub_ops_44"
+"expression:sub_ops_45"
+"expression:sub_ops_46"
+"expression:grel:value.replace(/\\b(AND|S)\\b/,_\"\")"
+"expression:sub_ops_47"
+"expression:grel:if(isBlank(value),_\"FOLDER\",_\"\")"
+
+/* Edges representing connections between programs and channels */
+"core/text-transform0" -> id_1
+"expression:value.toNumber()" -> "core/text-transform0"
+id -> "core/text-transform0"
+"group_1_core/mass-edit1" -> name_1
+"expression:sub_ops_1" -> "group_1_core/mass-edit1"
+name -> "group_1_core/mass-edit1"
+"group_2_core/text-transform2" -> name_2
+"expression:sub_ops_2" -> "group_2_core/text-transform2"
+name_1 -> "group_2_core/text-transform2"
+"group_3_core/mass-edit3" -> name_3
+"expression:sub_ops_3" -> "group_3_core/mass-edit3"
+name_2 -> "group_3_core/mass-edit3"
+"group_4_core/text-transform4" -> name_4
+"expression:sub_ops_4" -> "group_4_core/text-transform4"
+name_3 -> "group_4_core/text-transform4"
+"group_5_core/mass-edit5" -> name_5
+"expression:sub_ops_5" -> "group_5_core/mass-edit5"
+name_4 -> "group_5_core/mass-edit5"
+"group_6_core/text-transform6" -> sponsor_1
+"expression:sub_ops_6" -> "group_6_core/text-transform6"
+sponsor -> "group_6_core/text-transform6"
+"core/mass-edit7" -> sponsor_2
+"expression:value" -> "core/mass-edit7"
+sponsor_1 -> "core/mass-edit7"
+"core/text-transform8" -> sponsor_3
+"expression:grel:value.replace(\".\",_\"\")" -> "core/text-transform8"
+sponsor_2 -> "core/text-transform8"
+"group_7_core/mass-edit9" -> sponsor_4
+"expression:sub_ops_7" -> "group_7_core/mass-edit9"
+sponsor_3 -> "group_7_core/mass-edit9"
+"group_8_core/text-transform10" -> sponsor_5
+"expression:sub_ops_8" -> "group_8_core/text-transform10"
+sponsor_4 -> "group_8_core/text-transform10"
+"group_9_core/mass-edit11" -> sponsor_6
+"expression:sub_ops_9" -> "group_9_core/mass-edit11"
+sponsor_5 -> "group_9_core/mass-edit11"
+"group_10_core/text-transform12" -> event_1
+"expression:sub_ops_10" -> "group_10_core/text-transform12"
+event -> "group_10_core/text-transform12"
+"group_11_core/mass-edit13" -> event_2
+"expression:sub_ops_11" -> "group_11_core/mass-edit13"
+event_1 -> "group_11_core/mass-edit13"
+"group_12_core/text-transform14" -> event_3
+"expression:sub_ops_12" -> "group_12_core/text-transform14"
+event_2 -> "group_12_core/text-transform14"
+"core/mass-edit15" -> event_4
+"expression:value" -> "core/mass-edit15"
+event_3 -> "core/mass-edit15"
+"group_13_core/text-transform16" -> venue_1
+"expression:sub_ops_13" -> "group_13_core/text-transform16"
+venue -> "group_13_core/text-transform16"
+"group_14_core/mass-edit17" -> venue_2
+"expression:sub_ops_14" -> "group_14_core/mass-edit17"
+venue_1 -> "group_14_core/mass-edit17"
+"core/text-transform18" -> venue_3
+"expression:grel:value.replace(\"NULL\",_\"\")" -> "core/text-transform18"
+venue_2 -> "core/text-transform18"
+"group_15_core/mass-edit19" -> venue_4
+"expression:sub_ops_15" -> "group_15_core/mass-edit19"
+venue_3 -> "group_15_core/mass-edit19"
+"group_16_core/mass-edit20" -> occasion_1
+"expression:sub_ops_16" -> "group_16_core/mass-edit20"
+occasion -> "group_16_core/mass-edit20"
+"group_17_core/text-transform21" -> occasion_2
+"expression:sub_ops_17" -> "group_17_core/text-transform21"
+occasion_1 -> "group_17_core/text-transform21"
+"group_18_core/mass-edit22" -> occasion_3
+"expression:sub_ops_18" -> "group_18_core/mass-edit22"
+occasion_2 -> "group_18_core/mass-edit22"
+"group_19_core/text-transform23" -> call_number_1
+"expression:sub_ops_19" -> "group_19_core/text-transform23"
+call_number -> "group_19_core/text-transform23"
+"core/column-removal24" -> "remove-keywords"
+keywords -> "core/column-removal24"
+"core/column-removal25" -> "remove-language"
+language -> "core/column-removal25"
+"group_20_core/text-transform26" -> date_1
+"expression:sub_ops_20" -> "group_20_core/text-transform26"
+date -> "group_20_core/text-transform26"
+"group_21_core/text-transform27" -> place_1
+"expression:sub_ops_21" -> "group_21_core/text-transform27"
+place -> "group_21_core/text-transform27"
+"group_22_core/mass-edit28" -> place_2
+"expression:sub_ops_22" -> "group_22_core/mass-edit28"
+place_1 -> "group_22_core/mass-edit28"
+"core/text-transform29" -> place_3
+"expression:grel:value.replace(\"È\",_\"E\")" -> "core/text-transform29"
+place_2 -> "core/text-transform29"
+"group_23_core/mass-edit30" -> place_4
+"expression:sub_ops_23" -> "group_23_core/mass-edit30"
+place_3 -> "group_23_core/mass-edit30"
+"group_24_core/text-transform31" -> location_1
+"expression:sub_ops_24" -> "group_24_core/text-transform31"
+location -> "group_24_core/text-transform31"
+"group_25_core/mass-edit32" -> location_2
+"expression:sub_ops_25" -> "group_25_core/mass-edit32"
+location_1 -> "group_25_core/mass-edit32"
+"group_26_core/text-transform33" -> location_3
+"expression:sub_ops_26" -> "group_26_core/text-transform33"
+location_2 -> "group_26_core/text-transform33"
+"group_27_core/mass-edit34" -> location_4
+"expression:sub_ops_27" -> "group_27_core/mass-edit34"
+location_3 -> "group_27_core/mass-edit34"
+"core/text-transform35" -> page_count_1
+"expression:value.toNumber()" -> "core/text-transform35"
+page_count -> "core/text-transform35"
+"core/text-transform36" -> dish_count_1
+"expression:value.toNumber()" -> "core/text-transform36"
+dish_count -> "core/text-transform36"
+"group_28_core/text-transform37" -> notes_1
+"expression:sub_ops_28" -> "group_28_core/text-transform37"
+notes -> "group_28_core/text-transform37"
+"group_29_core/text-transform38" -> physical_description_1
+"expression:sub_ops_29" -> "group_29_core/text-transform38"
+physical_description -> "group_29_core/text-transform38"
+"group_30_core/mass-edit39" -> physical_description_2
+"expression:sub_ops_30" -> "group_30_core/mass-edit39"
+physical_description_1 -> "group_30_core/mass-edit39"
+"group_31_core/text-transform40" -> physical_description_3
+"expression:sub_ops_31" -> "group_31_core/text-transform40"
+physical_description_2 -> "group_31_core/text-transform40"
+"core/mass-edit41" -> physical_description_4
+"expression:value" -> "core/mass-edit41"
+physical_description_3 -> "core/mass-edit41"
+"group_32_core/text-transform42" -> physical_description_5
+"expression:sub_ops_32" -> "group_32_core/text-transform42"
+physical_description_4 -> "group_32_core/text-transform42"
+"group_33_core/mass-edit43" -> physical_description_6
+"expression:sub_ops_33" -> "group_33_core/mass-edit43"
+physical_description_5 -> "group_33_core/mass-edit43"
+"group_34_core/text-transform44" -> physical_description_7
+"expression:sub_ops_34" -> "group_34_core/text-transform44"
+physical_description_6 -> "group_34_core/text-transform44"
+"group_35_core/mass-edit45" -> physical_description_8
+"expression:sub_ops_35" -> "group_35_core/mass-edit45"
+physical_description_7 -> "group_35_core/mass-edit45"
+"group_36_core/text-transform46" -> physical_description_9
+"expression:sub_ops_36" -> "group_36_core/text-transform46"
+physical_description_8 -> "group_36_core/text-transform46"
+"group_37_core/mass-edit47" -> physical_description_10
+"expression:sub_ops_37" -> "group_37_core/mass-edit47"
+physical_description_9 -> "group_37_core/mass-edit47"
+"group_38_core/text-transform48" -> physical_description_11
+"expression:sub_ops_38" -> "group_38_core/text-transform48"
+physical_description_10 -> "group_38_core/text-transform48"
+"group_39_core/mass-edit49" -> physical_description_12
+"expression:sub_ops_39" -> "group_39_core/mass-edit49"
+physical_description_11 -> "group_39_core/mass-edit49"
+"group_40_core/text-transform50" -> physical_description_13
+"expression:sub_ops_40" -> "group_40_core/text-transform50"
+physical_description_12 -> "group_40_core/text-transform50"
+"group_41_core/mass-edit51" -> physical_description_14
+"expression:sub_ops_41" -> "group_41_core/mass-edit51"
+physical_description_13 -> "group_41_core/mass-edit51"
+"group_42_core/text-transform52" -> physical_description_15
+"expression:sub_ops_42" -> "group_42_core/text-transform52"
+physical_description_14 -> "group_42_core/text-transform52"
+"core/mass-edit53" -> physical_description_16
+"expression:value" -> "core/mass-edit53"
+physical_description_15 -> "core/mass-edit53"
+"group_43_core/text-transform54" -> physical_description_17
+"expression:sub_ops_43" -> "group_43_core/text-transform54"
+physical_description_16 -> "group_43_core/text-transform54"
+"group_44_core/mass-edit55" -> physical_description_18
+"expression:sub_ops_44" -> "group_44_core/mass-edit55"
+physical_description_17 -> "group_44_core/mass-edit55"
+"group_45_core/text-transform56" -> physical_description_19
+"expression:sub_ops_45" -> "group_45_core/text-transform56"
+physical_description_18 -> "group_45_core/text-transform56"
+"group_46_core/mass-edit57" -> physical_description_20
+"expression:sub_ops_46" -> "group_46_core/mass-edit57"
+physical_description_19 -> "group_46_core/mass-edit57"
+"core/text-transform58" -> physical_description_21
+"expression:grel:value.replace(/\\b(AND|S)\\b/,_\"\")" -> "core/text-transform58"
+physical_description_20 -> "core/text-transform58"
+"group_47_core/text-transform59" -> physical_size_1
+"expression:sub_ops_47" -> "group_47_core/text-transform59"
+physical_size -> "group_47_core/text-transform59"
+"core/text-transform60" -> physical_description_type_1
+"expression:grel:if(isBlank(value),_\"FOLDER\",_\"\")" -> "core/text-transform60"
+physical_description_type -> "core/text-transform60"
+CombineDataCleaningChanges -> CleanData
+id_1 -> CombineDataCleaningChanges
+name_5 -> CombineDataCleaningChanges
+sponsor_6 -> CombineDataCleaningChanges
+event_4 -> CombineDataCleaningChanges
+venue_4 -> CombineDataCleaningChanges
+occasion_3 -> CombineDataCleaningChanges
+call_number_1 -> CombineDataCleaningChanges
+keywords -> CombineDataCleaningChanges
+"remove-keywords" -> CombineDataCleaningChanges
+language -> CombineDataCleaningChanges
+"remove-language" -> CombineDataCleaningChanges
+date_1 -> CombineDataCleaningChanges
+place_4 -> CombineDataCleaningChanges
+location_4 -> CombineDataCleaningChanges
+page_count_1 -> CombineDataCleaningChanges
+dish_count_1 -> CombineDataCleaningChanges
+notes_1 -> CombineDataCleaningChanges
+physical_description_21 -> CombineDataCleaningChanges
+physical_size_1 -> CombineDataCleaningChanges
+physical_description_type_1 -> CombineDataCleaningChanges
+
+/* End of double cluster for drawing box around nodes in workflow */
+}}
+
+/* End of top-level graph */
+}
