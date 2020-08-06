@@ -10,14 +10,16 @@ select count(d.name),
 from Dish as d;
 select count(*) from Dish as d where d.menus_appeared == 0;
 select count(*) from Dish as d where d.menus_appeared == 0 and d.times_appeared > 0;
+select count(*) from Dish as d where d.menus_appeared == 0 and (d.first_appeared > 0 or d.last_appeared > 0);
 select count(*) from Dish as d where d.times_appeared == 0;
+select count(*) from Dish as d where d.times_appeared == 0 and d.menus_appeared > 0;
 select count(*) from Dish as d where d.times_appeared == 0 and (d.first_appeared > 0 or d.last_appeared > 0);
 select count(*) from Dish as d where d.last_appeared < d.first_appeared;
 select count(*) from Dish as d where d.highest_price < d.lowest_price;
 select count(*) from Dish as d where d.lowest_price < 0 or d.highest_price < 0;
+select count(*) from Dish as d where d.first_appeared < 1850  or d.first_appeared > 2020;
 select count(*) from Dish as d where d.first_appeared == 0;
-select d.first_appeared from Dish as d where d.first_appeared > 0 and d.first_appeared < 1850;
-select d.last_appeared from Dish as d where d.last_appeared > 2020;
+select count(*) from Dish as d where d.last_appeared < 1850  or d.last_appeared > 2020;
 select count(*) from Dish as d where d.last_appeared == 0;
 select d.first_appeared, d.last_appeared from Dish as d where (d.first_appeared == 0 and d.last_appeared != 0) or (d.first_appeared != 0 and d.last_appeared == 0);
 select count(*) from Dish as d where d.id not in (select mi.dish_id from MenuItem as mi);
